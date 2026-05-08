@@ -13,6 +13,11 @@ export default {
       },
     },
     extend: {
+      fontFamily: {
+        sarabun: ["Sarabun", "-apple-system", "Roboto", "Helvetica", "sans-serif"],
+        "noto-serif": ["Noto Serif JP", "-apple-system", "Roboto", "Helvetica", "serif"],
+        inter: ["Inter", "-apple-system", "Roboto", "Helvetica", "sans-serif"],
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
