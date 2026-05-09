@@ -13,6 +13,7 @@ import Nrita from "./pages/Nrita";
 import NaritaBallNose from "./pages/NaritaBallNose";
 import Narita2Flutes from "./pages/Narita2Flutes";
 import Narita4Flutes from "./pages/Narita4Flutes";
+import HeuleDeburring from "./pages/HeuleDeburring";
 import Placeholder from "./pages/Placeholder";
 import NotFound from "./pages/NotFound";
 
@@ -32,6 +33,7 @@ const App = () => (
           <Route path="/nrita/ball-nose" element={<NaritaBallNose />} />
           <Route path="/nrita/2-flutes" element={<Narita2Flutes />} />
           <Route path="/nrita/4-flutes" element={<Narita4Flutes />} />
+          <Route path="/heule/deburring" element={<HeuleDeburring />} />
           <Route
             path="/contact"
             element={<Placeholder title="CONTACT" />}
