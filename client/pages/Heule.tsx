@@ -23,6 +23,7 @@ const products = [
       "https://api.builder.io/api/v1/image/assets/TEMP/c42fb1c6bd8505c653d493a1b96543983be13fa4?width=378",
     imgAlt: "Counterboring tool",
     imgSide: "left" as const,
+    href: "/heule/counterboring",
   },
   {
     id: "chamfering",
