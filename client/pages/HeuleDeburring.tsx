@@ -81,7 +81,7 @@ export default function HeuleDeburring() {
               <img
                 src="https://api.builder.io/api/v1/image/assets/TEMP/76a1352e2bf60bff0801ff3604dce47e3428c16f?width=378"
                 alt="DL2 Tool variant 1"
-                className="h-48 md:h-60 w-auto object-contain"
+                className="h-48 md:h-60 w-auto object-contain max-w-0"
               />
               <img
                 src="https://api.builder.io/api/v1/image/assets/TEMP/76a1352e2bf60bff0801ff3604dce47e3428c16f?width=378"
@@ -91,7 +91,7 @@ export default function HeuleDeburring() {
               <img
                 src="https://api.builder.io/api/v1/image/assets/TEMP/76a1352e2bf60bff0801ff3604dce47e3428c16f?width=378"
                 alt="DL2 Tool variant 3"
-                className="h-40 md:h-52 w-auto object-contain"
+                className="h-40 md:h-52 w-auto object-contain opacity-0"
               />
             </div>
           </div>
