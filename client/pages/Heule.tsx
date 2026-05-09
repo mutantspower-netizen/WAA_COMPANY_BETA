@@ -34,6 +34,7 @@ const products = [
       "https://api.builder.io/api/v1/image/assets/TEMP/2d9a80bd6e54ebb950d6d516a658840ec5a01131?width=378",
     imgAlt: "Chamfering tool",
     imgSide: "right" as const,
+    href: "/heule/chamfering",
   },
   {
     id: "drilling",
