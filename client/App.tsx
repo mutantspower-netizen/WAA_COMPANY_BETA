@@ -11,6 +11,7 @@ import AboutUs from "./pages/AboutUs";
 import Heule from "./pages/Heule";
 import Nrita from "./pages/Nrita";
 import NaritaBallNose from "./pages/NaritaBallNose";
+import Narita2Flutes from "./pages/Narita2Flutes";
 import Placeholder from "./pages/Placeholder";
 import NotFound from "./pages/NotFound";
 
@@ -28,6 +29,7 @@ const App = () => (
           <Route path="/heule" element={<Heule />} />
           <Route path="/nrita" element={<Nrita />} />
           <Route path="/nrita/ball-nose" element={<NaritaBallNose />} />
+          <Route path="/nrita/2-flutes" element={<Narita2Flutes />} />
           <Route
             path="/contact"
             element={<Placeholder title="CONTACT" />}

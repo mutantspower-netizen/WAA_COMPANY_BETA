@@ -111,7 +111,7 @@ export default function Nrita() {
                 <p className="font-sarabun text-black text-[15px] leading-snug text-right max-w-[470px]">
                   Solid carbide drilling combined with forward and backward chamfering in a single pass in the diameter range from 4.0 to 10.0 mm
                 </p>
-                <SpecificationButton />
+                <SpecificationButton to="/nrita/2-flutes" />
               </div>
               <EndMillImage
                 src="https://api.builder.io/api/v1/image/assets/TEMP/c89288ac87c3775f83f96ba0c942510960fee17b?width=271"
