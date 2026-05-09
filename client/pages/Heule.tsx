@@ -44,6 +44,7 @@ const products = [
       "https://api.builder.io/api/v1/image/assets/TEMP/a75ac0d3b55fcbce90714a96d5fef54bf607a8e6?width=380",
     imgAlt: "Drilling combine tool",
     imgSide: "left" as const,
+    href: "/heule/drilling-combine",
   },
 ];
 

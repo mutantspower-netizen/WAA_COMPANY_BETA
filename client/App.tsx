@@ -15,6 +15,7 @@ import Narita2Flutes from "./pages/Narita2Flutes";
 import Narita4Flutes from "./pages/Narita4Flutes";
 import HeuleDeburring from "./pages/HeuleDeburring";
 import HeuleCounterboring from "./pages/HeuleCounterboring";
+import HeuleDrillingCombine from "./pages/HeuleDrillingCombine";
 import Placeholder from "./pages/Placeholder";
 import NotFound from "./pages/NotFound";
 
@@ -36,6 +37,7 @@ const App = () => (
           <Route path="/nrita/4-flutes" element={<Narita4Flutes />} />
           <Route path="/heule/deburring" element={<HeuleDeburring />} />
           <Route path="/heule/counterboring" element={<HeuleCounterboring />} />
+          <Route path="/heule/drilling-combine" element={<HeuleDrillingCombine />} />
           <Route
             path="/contact"
             element={<Placeholder title="CONTACT" />}
