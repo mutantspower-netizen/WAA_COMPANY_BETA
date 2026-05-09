@@ -12,7 +12,6 @@ const products = [
       "https://api.builder.io/api/v1/image/assets/TEMP/76a1352e2bf60bff0801ff3604dce47e3428c16f?width=378",
     imgAlt: "Deburring tool",
     imgSide: "right" as const,
-    href: "/heule/deburring",
   },
   {
     id: "counterboring",
