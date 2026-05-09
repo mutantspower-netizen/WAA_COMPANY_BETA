@@ -133,7 +133,7 @@ export default function Nrita() {
               <p className="font-sarabun text-black text-[15px] leading-snug max-w-[470px]">
                 Built for high-speed finishing and harder materials, providing superior rigidity and fine surface quality.
               </p>
-              <SpecificationButton />
+              <SpecificationButton to="/nrita/4-flutes" />
             </div>
           </div>
 
