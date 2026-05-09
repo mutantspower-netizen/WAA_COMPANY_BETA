@@ -1,15 +1,28 @@
+import { Link } from "react-router-dom";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
-function SpecificationButton() {
-  return (
-    <button className="inline-flex items-center gap-2 bg-[#B30B0F] text-white font-sarabun text-sm font-semibold px-4 py-1.5 rounded-full hover:bg-[#950a0d] transition-colors">
+function SpecificationButton({ to }: { to?: string }) {
+  const inner = (
+    <>
       Specification
       <span className="flex items-center justify-center bg-white rounded-full w-5 h-5 flex-shrink-0">
         <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M2 5h6M5.5 2.5L8 5l-2.5 2.5" stroke="#B30B0F" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
         </svg>
       </span>
+    </>
+  );
+  if (to) {
+    return (
+      <Link to={to} className="inline-flex items-center gap-2 bg-[#B30B0F] text-white font-sarabun text-sm font-semibold px-4 py-1.5 rounded-full hover:bg-[#950a0d] transition-colors">
+        {inner}
+      </Link>
+    );
+  }
+  return (
+    <button className="inline-flex items-center gap-2 bg-[#B30B0F] text-white font-sarabun text-sm font-semibold px-4 py-1.5 rounded-full hover:bg-[#950a0d] transition-colors">
+      {inner}
     </button>
   );
 }
@@ -86,7 +99,7 @@ export default function Nrita() {
               <p className="font-sarabun text-black text-[15px] leading-snug max-w-[470px]">
                 Solid carbide drilling combined with forward and backward chamfering in a single pass in the diameter range from 4.0 to 10.0 mm
               </p>
-              <SpecificationButton />
+              <SpecificationButton to="/nrita/ball-nose" />
             </div>
           </div>
 

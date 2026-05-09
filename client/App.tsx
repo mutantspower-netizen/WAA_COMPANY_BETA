@@ -10,6 +10,7 @@ import Index from "./pages/Index";
 import AboutUs from "./pages/AboutUs";
 import Heule from "./pages/Heule";
 import Nrita from "./pages/Nrita";
+import NaritaBallNose from "./pages/NaritaBallNose";
 import Placeholder from "./pages/Placeholder";
 import NotFound from "./pages/NotFound";
 
@@ -26,6 +27,7 @@ const App = () => (
           <Route path="/about" element={<AboutUs />} />
           <Route path="/heule" element={<Heule />} />
           <Route path="/nrita" element={<Nrita />} />
+          <Route path="/nrita/ball-nose" element={<NaritaBallNose />} />
           <Route
             path="/contact"
             element={<Placeholder title="CONTACT" />}
