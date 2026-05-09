@@ -9,6 +9,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import AboutUs from "./pages/AboutUs";
 import Heule from "./pages/Heule";
+import Nrita from "./pages/Nrita";
 import Placeholder from "./pages/Placeholder";
 import NotFound from "./pages/NotFound";
 
@@ -24,10 +25,7 @@ const App = () => (
           <Route path="/" element={<Index />} />
           <Route path="/about" element={<AboutUs />} />
           <Route path="/heule" element={<Heule />} />
-          <Route
-            path="/nrita"
-            element={<Placeholder title="W.A.A X NRITA" />}
-          />
+          <Route path="/nrita" element={<Nrita />} />
           <Route
             path="/contact"
             element={<Placeholder title="CONTACT" />}
