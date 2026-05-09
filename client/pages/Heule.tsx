@@ -16,7 +16,7 @@ const products = [
   {
     id: "counterboring",
     label: "BSF & SOLO",
-    title: "COUNTERBORING",
+    title: "COUNTER BORING",
     titleAlign: "left" as const,
     imgSrc:
       "https://api.builder.io/api/v1/image/assets/TEMP/c42fb1c6bd8505c653d493a1b96543983be13fa4?width=378",
