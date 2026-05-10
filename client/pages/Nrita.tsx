@@ -74,6 +74,7 @@ export default function Nrita() {
             src="https://api.builder.io/api/v1/image/assets/TEMP/19f8b09e554ec6d01e98fb980fc860612632e4f1?width=396"
             alt="Narita End Mills"
             className="h-16 w-auto mb-5"
+            style={{ maxWidth: "500px", minHeight: "200px" }}
           />
           <p className="font-sarabun text-[13px] text-[#1e1e1e] leading-relaxed max-w-[720px]">
             Narita end mills are engineered for high-performance machining across a full range, including ball nose 2 flutes,
