@@ -168,12 +168,11 @@ export default function NaritaBallNose() {
             <div className="flex-1 flex items-center justify-center">
               <EndMillDiagram />
             </div>
-            <div className="flex-shrink-0 flex items-center justify-center" style={{ maxWidth: '240px', maxHeight: '240px' }}>
+            <div className="flex-shrink-0 flex items-center justify-center">
               <img
                 src="https://api.builder.io/api/v1/image/assets/TEMP/30d7875b1c393e6c980a64a2ba4ea56f5a4452dd?width=274"
                 alt="Ball Nose 2 Flute End Mill"
-                className="h-48 md:h-60 w-auto object-contain"
-                style={{ transform: 'rotate(90deg)', maxWidth: '240px', maxHeight: '240px' }}
+                className="h-52 md:h-64 w-auto object-contain max-w-[200px]"
               />
             </div>
           </div>
