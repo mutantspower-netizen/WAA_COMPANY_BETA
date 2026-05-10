@@ -92,7 +92,7 @@ export default function Nrita() {
             <EndMillImage
               src="https://api.builder.io/api/v1/image/assets/TEMP/30d7875b1c393e6c980a64a2ba4ea56f5a4452dd?width=274"
               alt="Ball Nose 2 Flute"
-              rotate={90}
+              rotate={100}
             />
             <div className="flex-1 flex flex-col gap-3 px-2">
               <h2 className="font-sarabun text-[#B30B0F] text-3xl font-semibold">BALL NOSE 2 FLUTE</h2>
