@@ -15,7 +15,7 @@ function SpecificationButton({ to }: { to?: string }) {
   );
   if (to) {
     return (
-      <Link to={to} className="inline-flex items-center gap-2 bg-[#B30B0F] text-white font-sarabun text-sm font-semibold px-4 py-1.5 rounded-full hover:bg-[#950a0d] transition-colors">
+      <Link to={to} className="inline-flex items-center gap-2 bg-[#B30B0F] text-white font-sarabun text-sm font-semibold px-4 py-1.5 rounded-full hover:bg-[#950a0d] transition-colors" style={{ maxWidth: '145px' }}>
         {inner}
       </Link>
     );
