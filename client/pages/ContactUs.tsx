@@ -115,8 +115,8 @@ export default function ContactUs() {
       {/* Quick Contact Form Section */}
       <section className="relative max-w-[1200px] mx-auto px-6 py-16">
         <h2 className="font-sarabun text-[28px] sm:text-[32px] font-bold text-center mb-12">
-          <span className="text-black">SEND US A </span>
-          <span className="text-[#F22703]">MESSAGE</span>
+          <span className="text-black">Consult with </span>
+          <span className="text-[#F22703]">W.A.A CO.LTD</span>
         </h2>
 
         <div className="max-w-[600px] mx-auto bg-white p-8 rounded-[20px] shadow-lg">
