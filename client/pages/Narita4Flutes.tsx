@@ -143,7 +143,7 @@ function WorkpieceMaterialTable() {
 function FourFluteDiagram() {
   return (
     <img
-      src="/four-flute-diagram.svg"
+      src="https://cdn.builder.io/api/v1/image/assets%2F2f0b492e34a14ec29346019ef2a7eaa9%2Fc8e8ac9deb7c4d43bcc292e839751a94?format=webp&width=800&height=1200"
       alt="4 Flute End Mill Diagram"
       className="w-full max-w-[500px]"
     />
