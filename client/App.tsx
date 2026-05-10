@@ -8,6 +8,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import AboutUs from "./pages/AboutUs";
+import ContactUs from "./pages/ContactUs";
 import Heule from "./pages/Heule";
 import Nrita from "./pages/Nrita";
 import NaritaBallNose from "./pages/NaritaBallNose";
@@ -31,6 +32,7 @@ const App = () => (
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/about" element={<AboutUs />} />
+          <Route path="/contact" element={<ContactUs />} />
           <Route path="/heule" element={<Heule />} />
           <Route path="/nrita" element={<Nrita />} />
           <Route path="/nrita/ball-nose" element={<NaritaBallNose />} />
@@ -40,10 +42,6 @@ const App = () => (
           <Route path="/heule/counterboring" element={<HeuleCounterboring />} />
           <Route path="/heule/drilling-combine" element={<HeuleDrillingCombine />} />
           <Route path="/heule/chamfering" element={<HeuleChamfering />} />
-          <Route
-            path="/contact"
-            element={<Placeholder title="CONTACT" />}
-          />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
