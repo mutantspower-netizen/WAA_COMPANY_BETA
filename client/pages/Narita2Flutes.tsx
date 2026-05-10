@@ -217,14 +217,6 @@ export default function Narita2Flutes() {
             <SpecTable rows={longRows} />
           </div>
 
-          {/* Bottom decorative image */}
-          <div className="flex justify-end mt-8 pointer-events-none select-none">
-            <img
-              src="https://api.builder.io/api/v1/image/assets/TEMP/c89288ac87c3775f83f96ba0c942510960fee17b?width=271"
-              alt=""
-              className="h-36 w-auto object-contain opacity-70"
-            />
-          </div>
 
         </div>
       </div>
