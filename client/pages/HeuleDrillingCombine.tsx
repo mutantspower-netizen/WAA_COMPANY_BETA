@@ -3,7 +3,7 @@ import Footer from "@/components/Footer";
 
 function SpecButton() {
   return (
-    <button className="inline-flex items-center gap-2 bg-[#B30B0F] text-white font-sarabun text-sm font-semibold px-4 py-1.5 rounded-full hover:bg-[#950a0d] transition-colors">
+    <button className="inline-flex items-center gap-2 bg-[#B30B0F] text-white font-sarabun text-sm font-semibold px-4 py-1.5 rounded-full hover:bg-[#950a0d] transition-colors max-w-[145px]">
       Specification
       <span className="flex items-center justify-center bg-white rounded-full w-5 h-5 flex-shrink-0">
         <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -43,7 +43,7 @@ export default function HeuleDrillingCombine() {
           <div className="flex flex-col sm:flex-row items-center gap-8 mb-20">
             <div className="flex-1 flex items-center justify-center">
               <img
-                src="/client\pages\img\VEX.png"
+                src="./client/pages/img/VEX.png"
                 alt="VEX Drilling Tools"
                 className="w-full max-w-[380px] object-contain"
               />
@@ -68,7 +68,7 @@ export default function HeuleDrillingCombine() {
             </div>
             <div className="flex-1 flex items-center justify-center">
               <img
-                src="/client\pages\img\DCC.png"
+                src="./client/pages/img/DCC.png"
                 alt="DCC Drilling Tools"
                 className="w-full max-w-[380px] object-contain"
               />
@@ -79,7 +79,7 @@ export default function HeuleDrillingCombine() {
           <div className="flex flex-col sm:flex-row items-center gap-8">
             <div className="flex-1 flex items-center justify-center">
               <img
-                src="/client\pages\img\Module_Line.png"
+                src="./client/pages/img/Module_Line.png"
                 alt="Module Line Drilling Tools"
                 className="w-full max-w-[380px] object-contain"
               />
