@@ -92,7 +92,7 @@ export default function Nrita() {
           {/* BALL NOSE 2 FLUTE — image left, content right */}
           <div className="flex flex-col sm:flex-row items-center gap-4 py-8 border-b border-gray-200">
             <EndMillImage
-              src="https://api.builder.io/api/v1/image/assets/TEMP/30d7875b1c393e6c980a64a2ba4ea56f5a4452dd?width=274"
+              src="https://api.builder.io/api/v1/image/assets/TEMP/30d7875b1c393e6c980a64a2ba4ea56f5a4452dd?width=400"
               alt="Ball Nose 2 Flute"
               rotate={0}
             />
@@ -116,7 +116,7 @@ export default function Nrita() {
                 <SpecificationButton to="/nrita/2-flutes" />
               </div>
               <EndMillImage
-                src="https://api.builder.io/api/v1/image/assets/TEMP/c89288ac87c3775f83f96ba0c942510960fee17b?width=271"
+                src="https://api.builder.io/api/v1/image/assets/TEMP/c89288ac87c3775f83f96ba0c942510960fee17b?width=400"
                 alt="2 Flutes End Mill"
                 rotate={0}
               />
