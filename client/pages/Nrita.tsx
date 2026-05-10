@@ -29,16 +29,17 @@ function SpecificationButton({ to }: { to?: string }) {
 
 function EndMillImage({ src, alt, rotate = 90 }: { src: string; alt: string; rotate?: number }) {
   return (
-    <div className="flex-1 relative overflow-hidden" style={{ minHeight: '120px', maxHeight: '180px', height: '15vw' }}>
+    <div className="flex-1 relative overflow-visible flex items-center justify-center" style={{ minHeight: '300px' }}>
       <img
         src={src}
         alt={alt}
-        className="absolute top-1/2 left-1/2"
+        className="relative"
         style={{
-          transform: `translateX(-50%) translateY(-50%) rotate(${rotate}deg)`,
-          height: 'min(450px, 42vw)',
-          width: 'auto',
-          maxWidth: 'none',
+          transform: `rotate(${rotate}deg)`,
+          height: 'auto',
+          width: '100%',
+          maxWidth: '300px',
+          objectFit: 'contain',
         }}
       />
     </div>
