@@ -222,14 +222,6 @@ export default function NaritaBallNose() {
 
           <SpecTable rows={lengthenRows} />
 
-          {/* Bottom decorative image */}
-          <div className="flex justify-end mt-6 pointer-events-none select-none">
-            <img
-              src="https://api.builder.io/api/v1/image/assets/TEMP/30d7875b1c393e6c980a64a2ba4ea56f5a4452dd?width=274"
-              alt=""
-              className="h-40 w-auto object-contain opacity-70"
-            />
-          </div>
 
         </div>
       </div>
