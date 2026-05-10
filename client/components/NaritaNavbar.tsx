@@ -27,9 +27,9 @@ export default function NaritaNavbar() {
           </Link>
           <Link to="/nrita">
             <img
-              src="https://api.builder.io/api/v1/image/assets/TEMP/19f8b09e554ec6d01e98fb980fc860612632e4f1?width=198"
+              src="https://api.builder.io/api/v1/image/assets/TEMP/19f8b09e554ec6d01e98fb980fc860612632e4f1?width=300"
               alt="Narita End Mills"
-              className="h-7 w-auto"
+              className="h-10 w-auto"
             />
           </Link>
         </div>
