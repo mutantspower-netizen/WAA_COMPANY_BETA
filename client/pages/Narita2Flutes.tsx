@@ -105,7 +105,7 @@ function WorkpieceMaterialTable() {
 function TwoFluteDiagram() {
   return (
     <img
-      src="/two-flute-diagram.svg"
+      src="https://cdn.builder.io/api/v1/image/assets%2F2f0b492e34a14ec29346019ef2a7eaa9%2F7139563c55e3461aabcc35fca34bc014?format=webp&width=800&height=1200"
       alt="2 Flute End Mill Diagram"
       className="w-full max-w-[500px]"
     />
