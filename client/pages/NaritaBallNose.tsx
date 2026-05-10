@@ -173,21 +173,6 @@ export default function NaritaBallNose() {
           className="absolute inset-0 w-full h-full object-cover opacity-30 pointer-events-none select-none"
         />
 
-        {/* Decorative side images */}
-        <div className="absolute left-0 top-[280px] w-32 md:w-48 pointer-events-none select-none overflow-hidden opacity-80">
-          <img
-            src="https://api.builder.io/api/v1/image/assets/TEMP/30d7875b1c393e6c980a64a2ba4ea56f5a4452dd?width=274"
-            alt=""
-            className="w-full object-contain -translate-x-1/4"
-          />
-        </div>
-        <div className="absolute right-0 top-[60px] w-36 md:w-52 pointer-events-none select-none overflow-hidden opacity-80">
-          <img
-            src="https://api.builder.io/api/v1/image/assets/TEMP/30d7875b1c393e6c980a64a2ba4ea56f5a4452dd?width=274"
-            alt=""
-            className="w-full object-contain translate-x-1/4"
-          />
-        </div>
 
         {/* Main content */}
         <div className="relative max-w-[760px] mx-auto px-6 py-10">

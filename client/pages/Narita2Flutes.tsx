@@ -176,23 +176,6 @@ export default function Narita2Flutes() {
           className="absolute inset-0 w-full h-full object-cover opacity-30 pointer-events-none select-none"
         />
 
-        {/* Decorative left side image */}
-        <div className="absolute left-0 top-[200px] w-28 md:w-40 pointer-events-none select-none overflow-hidden opacity-80">
-          <img
-            src="https://api.builder.io/api/v1/image/assets/TEMP/c89288ac87c3775f83f96ba0c942510960fee17b?width=271"
-            alt=""
-            className="w-full object-contain -translate-x-1/4"
-          />
-        </div>
-
-        {/* Decorative right side image */}
-        <div className="absolute right-0 top-[60px] w-32 md:w-44 pointer-events-none select-none overflow-hidden opacity-80">
-          <img
-            src="https://api.builder.io/api/v1/image/assets/TEMP/c89288ac87c3775f83f96ba0c942510960fee17b?width=271"
-            alt=""
-            className="w-full object-contain translate-x-1/4"
-          />
-        </div>
 
         {/* Main content */}
         <div className="relative max-w-[760px] mx-auto px-6 py-10">
