@@ -215,6 +215,7 @@ export default function NaritaBallNose() {
                 src="https://api.builder.io/api/v1/image/assets/TEMP/30d7875b1c393e6c980a64a2ba4ea56f5a4452dd?width=274"
                 alt="Ball Nose 2 Flute End Mill"
                 className="h-48 md:h-60 w-auto object-contain"
+                style={{ transform: 'rotate(90deg)' }}
               />
             </div>
           </div>
