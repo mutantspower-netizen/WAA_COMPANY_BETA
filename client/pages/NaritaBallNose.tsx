@@ -125,38 +125,11 @@ function WorkPieceMaterialsTable() {
 
 function EndMillDiagram() {
   return (
-    <svg viewBox="0 0 520 200" xmlns="http://www.w3.org/2000/svg" className="w-full max-w-[480px]">
-      {/* Shank */}
-      <rect x="170" y="72" width="300" height="46" fill="none" stroke="#333" strokeWidth="1.2" />
-      {/* Flute area (slightly wider) */}
-      <rect x="100" y="66" width="80" height="58" fill="none" stroke="#333" strokeWidth="1.2" />
-      {/* Ball nose */}
-      <path d="M100,66 Q72,66 72,95 Q72,124 100,124" fill="none" stroke="#333" strokeWidth="1.2" />
-      {/* Flute detail lines */}
-      <line x1="140" y1="66" x2="140" y2="124" stroke="#333" strokeWidth="0.6" strokeDasharray="3,2" />
-      {/* d2 dimension line (right side) */}
-      <line x1="472" y1="60" x2="472" y2="72" stroke="#333" strokeWidth="0.8" />
-      <line x1="472" y1="118" x2="472" y2="130" stroke="#333" strokeWidth="0.8" />
-      <line x1="460" y1="63" x2="484" y2="63" stroke="#333" strokeWidth="0.8" />
-      <line x1="460" y1="127" x2="484" y2="127" stroke="#333" strokeWidth="0.8" />
-      <text x="488" y="100" fontSize="12" fontFamily="serif" fontStyle="italic" fill="#333">d2</text>
-      {/* l1 dimension (overall length, bottom) */}
-      <line x1="72" y1="138" x2="470" y2="138" stroke="#333" strokeWidth="0.8" />
-      <line x1="72" y1="132" x2="72" y2="144" stroke="#333" strokeWidth="0.8" />
-      <line x1="470" y1="132" x2="470" y2="144" stroke="#333" strokeWidth="0.8" />
-      <text x="255" y="153" fontSize="12" fontFamily="serif" fontStyle="italic" fill="#333" textAnchor="middle">l1</text>
-      {/* l2 dimension (flute length, bottom) */}
-      <line x1="72" y1="158" x2="175" y2="158" stroke="#333" strokeWidth="0.8" />
-      <line x1="72" y1="153" x2="72" y2="163" stroke="#333" strokeWidth="0.8" />
-      <line x1="175" y1="153" x2="175" y2="163" stroke="#333" strokeWidth="0.8" />
-      <text x="123" y="173" fontSize="12" fontFamily="serif" fontStyle="italic" fill="#333" textAnchor="middle">l2</text>
-      {/* R label */}
-      <text x="74" y="90" fontSize="12" fontFamily="serif" fontStyle="italic" fill="#333">R</text>
-      {/* Cross-section circle */}
-      <circle cx="260" cy="188" r="11" fill="none" stroke="#333" strokeWidth="1.2" />
-      <line x1="253" y1="188" x2="267" y2="188" stroke="#333" strokeWidth="0.8" />
-      <line x1="260" y1="181" x2="260" y2="195" stroke="#333" strokeWidth="0.8" />
-    </svg>
+    <img
+      src="https://cdn.builder.io/api/v1/image/assets%2F2f0b492e34a14ec29346019ef2a7eaa9%2F48e643600ae24ca382a281bad2ee5e6d?format=webp&width=800&height=1200"
+      alt="Ball Nose End Mill Diagram"
+      className="w-full max-w-[480px]"
+    />
   );
 }
 
@@ -173,21 +146,6 @@ export default function NaritaBallNose() {
           className="absolute inset-0 w-full h-full object-cover opacity-30 pointer-events-none select-none"
         />
 
-        {/* Decorative side images */}
-        <div className="absolute left-0 top-[280px] w-32 md:w-48 pointer-events-none select-none overflow-hidden opacity-80">
-          <img
-            src="https://api.builder.io/api/v1/image/assets/TEMP/30d7875b1c393e6c980a64a2ba4ea56f5a4452dd?width=274"
-            alt=""
-            className="w-full object-contain -translate-x-1/4"
-          />
-        </div>
-        <div className="absolute right-0 top-[60px] w-36 md:w-52 pointer-events-none select-none overflow-hidden opacity-80">
-          <img
-            src="https://api.builder.io/api/v1/image/assets/TEMP/30d7875b1c393e6c980a64a2ba4ea56f5a4452dd?width=274"
-            alt=""
-            className="w-full object-contain translate-x-1/4"
-          />
-        </div>
 
         {/* Main content */}
         <div className="relative max-w-[760px] mx-auto px-6 py-10">
@@ -214,7 +172,7 @@ export default function NaritaBallNose() {
               <img
                 src="https://api.builder.io/api/v1/image/assets/TEMP/30d7875b1c393e6c980a64a2ba4ea56f5a4452dd?width=274"
                 alt="Ball Nose 2 Flute End Mill"
-                className="h-48 md:h-60 w-auto object-contain"
+                className="h-52 md:h-64 w-auto object-contain max-w-[200px]"
               />
             </div>
           </div>
@@ -236,14 +194,6 @@ export default function NaritaBallNose() {
 
           <SpecTable rows={lengthenRows} />
 
-          {/* Bottom decorative image */}
-          <div className="flex justify-end mt-6 pointer-events-none select-none">
-            <img
-              src="https://api.builder.io/api/v1/image/assets/TEMP/30d7875b1c393e6c980a64a2ba4ea56f5a4452dd?width=274"
-              alt=""
-              className="h-40 w-auto object-contain opacity-70"
-            />
-          </div>
 
         </div>
       </div>

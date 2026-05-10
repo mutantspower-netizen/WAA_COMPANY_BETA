@@ -15,7 +15,7 @@ function SpecificationButton({ to }: { to?: string }) {
   );
   if (to) {
     return (
-      <Link to={to} className="inline-flex items-center gap-2 bg-[#B30B0F] text-white font-sarabun text-sm font-semibold px-4 py-1.5 rounded-full hover:bg-[#950a0d] transition-colors">
+      <Link to={to} className="inline-flex items-center gap-2 bg-[#B30B0F] text-white font-sarabun text-sm font-semibold px-4 py-1.5 rounded-full hover:bg-[#950a0d] transition-colors" style={{ maxWidth: '145px' }}>
         {inner}
       </Link>
     );
@@ -29,16 +29,17 @@ function SpecificationButton({ to }: { to?: string }) {
 
 function EndMillImage({ src, alt, rotate = 90 }: { src: string; alt: string; rotate?: number }) {
   return (
-    <div className="flex-1 relative overflow-hidden" style={{ minHeight: '120px', maxHeight: '180px', height: '15vw' }}>
+    <div className="flex-1 relative overflow-visible flex items-center justify-center" style={{ minHeight: '300px' }}>
       <img
         src={src}
         alt={alt}
-        className="absolute top-1/2 left-1/2"
+        className="relative"
         style={{
-          transform: `translateX(-50%) translateY(-50%) rotate(${rotate}deg)`,
-          height: 'min(450px, 42vw)',
-          width: 'auto',
-          maxWidth: 'none',
+          transform: `rotate(${rotate}deg)`,
+          height: 'auto',
+          width: '100%',
+          maxWidth: '300px',
+          objectFit: 'contain',
         }}
       />
     </div>
@@ -61,7 +62,7 @@ export default function Nrita() {
         {/* Hero section */}
         <section className="relative w-full overflow-hidden bg-[#111]">
           <img
-            src="https://api.builder.io/api/v1/image/assets/TEMP/954b83ba7fb774c332ed5340b731c243c0fb8f71?width=2882"
+            src="https://api.builder.io/api/v1/image/assets/TEMP/954b83ba7fb774c332ed5340b731c243c0fb8f71?width=4000"
             alt="Narita End Mills"
             className="w-full object-cover object-center"
             style={{ maxHeight: '270px' }}
@@ -91,9 +92,9 @@ export default function Nrita() {
           {/* BALL NOSE 2 FLUTE — image left, content right */}
           <div className="flex flex-col sm:flex-row items-center gap-4 py-8 border-b border-gray-200">
             <EndMillImage
-              src="https://api.builder.io/api/v1/image/assets/TEMP/30d7875b1c393e6c980a64a2ba4ea56f5a4452dd?width=274"
+              src="https://api.builder.io/api/v1/image/assets/TEMP/30d7875b1c393e6c980a64a2ba4ea56f5a4452dd?width=400"
               alt="Ball Nose 2 Flute"
-              rotate={280}
+              rotate={0}
             />
             <div className="flex-1 flex flex-col gap-3 px-2">
               <h2 className="font-sarabun text-[#B30B0F] text-3xl font-semibold">BALL NOSE 2 FLUTE</h2>
@@ -115,9 +116,9 @@ export default function Nrita() {
                 <SpecificationButton to="/nrita/2-flutes" />
               </div>
               <EndMillImage
-                src="https://api.builder.io/api/v1/image/assets/TEMP/c89288ac87c3775f83f96ba0c942510960fee17b?width=271"
+                src="https://api.builder.io/api/v1/image/assets/TEMP/c89288ac87c3775f83f96ba0c942510960fee17b?width=400"
                 alt="2 Flutes End Mill"
-                rotate={-90}
+                rotate={0}
               />
             </div>
           </div>
@@ -125,9 +126,9 @@ export default function Nrita() {
           {/* 4 FULTES END MILL — image left, content right */}
           <div className="flex flex-col sm:flex-row items-center gap-4 py-8">
             <EndMillImage
-              src="https://api.builder.io/api/v1/image/assets/TEMP/0823aeb34f173a738e8884f3e139142cb7a02929?width=136"
+              src="https://api.builder.io/api/v1/image/assets/TEMP/0823aeb34f173a738e8884f3e139142cb7a02929?width=400"
               alt="4 Flutes End Mill"
-              rotate={90}
+              rotate={0}
             />
             <div className="flex-1 flex flex-col gap-3 px-2">
               <h2 className="font-sarabun text-[#B30B0F] text-3xl font-semibold">4 FULTES END MILL</h2>

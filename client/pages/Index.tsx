@@ -89,7 +89,7 @@ export default function Index() {
           style={{ maxHeight: "520px", objectPosition: "center" }}
         />
         <div className="absolute inset-0 bg-black/20" />
-        <div className="absolute top-1/2 right-[5%] -translate-y-1/2 text-center max-w-[280px]">
+        <div className="absolute top-1/2 left-[5%] -translate-y-1/2 text-center max-w-[280px]">
           <p className="font-sarabun text-[18px] sm:text-[20px] font-extrabold text-[#cfcdcd] leading-tight">
             Sale Partner and tools consulting domestically in thailand
           </p>

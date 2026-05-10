@@ -1,0 +1,32 @@
+<svg viewBox="0 0 520 200" xmlns="http://www.w3.org/2000/svg" className="w-full max-w-[480px]">
+  {/* Shank */}
+  <rect x="170" y="72" width="300" height="46" fill="none" stroke="#333" strokeWidth="1.2" />
+  {/* Flute area (slightly wider) */}
+  <rect x="100" y="66" width="80" height="58" fill="none" stroke="#333" strokeWidth="1.2" />
+  {/* Ball nose */}
+  <path d="M100,66 Q72,66 72,95 Q72,124 100,124" fill="none" stroke="#333" strokeWidth="1.2" />
+  {/* Flute detail lines */}
+  <line x1="140" y1="66" x2="140" y2="124" stroke="#333" strokeWidth="0.6" strokeDasharray="3,2" />
+  {/* d2 dimension line (right side) */}
+  <line x1="472" y1="60" x2="472" y2="72" stroke="#333" strokeWidth="0.8" />
+  <line x1="472" y1="118" x2="472" y2="130" stroke="#333" strokeWidth="0.8" />
+  <line x1="460" y1="63" x2="484" y2="63" stroke="#333" strokeWidth="0.8" />
+  <line x1="460" y1="127" x2="484" y2="127" stroke="#333" strokeWidth="0.8" />
+  <text x="488" y="100" fontSize="12" fontFamily="serif" fontStyle="italic" fill="#333">d2</text>
+  {/* l1 dimension (overall length, bottom) */}
+  <line x1="72" y1="138" x2="470" y2="138" stroke="#333" strokeWidth="0.8" />
+  <line x1="72" y1="132" x2="72" y2="144" stroke="#333" strokeWidth="0.8" />
+  <line x1="470" y1="132" x2="470" y2="144" stroke="#333" strokeWidth="0.8" />
+  <text x="255" y="153" fontSize="12" fontFamily="serif" fontStyle="italic" fill="#333" textAnchor="middle">l1</text>
+  {/* l2 dimension (flute length, bottom) */}
+  <line x1="72" y1="158" x2="175" y2="158" stroke="#333" strokeWidth="0.8" />
+  <line x1="72" y1="153" x2="72" y2="163" stroke="#333" strokeWidth="0.8" />
+  <line x1="175" y1="153" x2="175" y2="163" stroke="#333" strokeWidth="0.8" />
+  <text x="123" y="173" fontSize="12" fontFamily="serif" fontStyle="italic" fill="#333" textAnchor="middle">l2</text>
+  {/* R label */}
+  <text x="74" y="90" fontSize="12" fontFamily="serif" fontStyle="italic" fill="#333">R</text>
+  {/* Cross-section circle */}
+  <circle cx="260" cy="188" r="11" fill="none" stroke="#333" strokeWidth="1.2" />
+  <line x1="253" y1="188" x2="267" y2="188" stroke="#333" strokeWidth="0.8" />
+  <line x1="260" y1="181" x2="260" y2="195" stroke="#333" strokeWidth="0.8" />
+</svg>

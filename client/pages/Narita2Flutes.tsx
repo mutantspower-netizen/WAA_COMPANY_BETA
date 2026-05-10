@@ -104,62 +104,11 @@ function WorkpieceMaterialTable() {
 
 function TwoFluteDiagram() {
   return (
-    <svg viewBox="0 0 560 220" xmlns="http://www.w3.org/2000/svg" className="w-full max-w-[500px]">
-      {/* ── Profile view ─────────────────────────────── */}
-      {/* Shank (right portion) */}
-      <rect x="280" y="72" width="230" height="46" fill="none" stroke="#333" strokeWidth="1.2" />
-      {/* Cutting portion (left, slightly wider) */}
-      <rect x="80" y="64" width="200" height="62" fill="none" stroke="#333" strokeWidth="1.2" />
-      {/* Flat nose line */}
-      <line x1="80" y1="64" x2="80" y2="126" stroke="#333" strokeWidth="1.8" />
-      {/* Junction taper */}
-      <line x1="280" y1="64" x2="280" y2="72" stroke="#333" strokeWidth="1.2" />
-      <line x1="280" y1="118" x2="280" y2="126" stroke="#333" strokeWidth="1.2" />
-
-      {/* d1 label top-left with downward arrow */}
-      <line x1="80" y1="50" x2="80" y2="64" stroke="#333" strokeWidth="0.8" markerEnd="url(#arr)" />
-      <text x="72" y="46" fontSize="12" fontFamily="serif" fontStyle="italic" fill="#333" textAnchor="middle">d1</text>
-
-      {/* d2 label top-right */}
-      <line x1="510" y1="50" x2="510" y2="72" stroke="#333" strokeWidth="0.8" />
-      <text x="516" y="46" fontSize="12" fontFamily="serif" fontStyle="italic" fill="#333" textAnchor="start">d2</text>
-      <line x1="498" y1="50" x2="524" y2="50" stroke="#333" strokeWidth="0.8" />
-      <line x1="498" y1="118" x2="524" y2="118" stroke="#333" strokeWidth="0.8" />
-      <line x1="510" y1="118" x2="510" y2="130" stroke="#333" strokeWidth="0.8" />
-
-      {/* l2 dimension (cutting length) */}
-      <line x1="80" y1="140" x2="280" y2="140" stroke="#333" strokeWidth="0.8" />
-      <line x1="80" y1="135" x2="80" y2="145" stroke="#333" strokeWidth="0.8" />
-      <line x1="280" y1="135" x2="280" y2="145" stroke="#333" strokeWidth="0.8" />
-      <text x="180" y="155" fontSize="12" fontFamily="serif" fontStyle="italic" fill="#333" textAnchor="middle">l2</text>
-
-      {/* l1 dimension (overall length) */}
-      <line x1="80" y1="162" x2="510" y2="162" stroke="#333" strokeWidth="0.8" />
-      <line x1="80" y1="157" x2="80" y2="167" stroke="#333" strokeWidth="0.8" />
-      <line x1="510" y1="157" x2="510" y2="167" stroke="#333" strokeWidth="0.8" />
-      <text x="295" y="177" fontSize="12" fontFamily="serif" fontStyle="italic" fill="#333" textAnchor="middle">l1</text>
-
-      {/* ── Cross sections ──────────────────────────── */}
-      {/* d1 ≤ φ6 — 2-flute symmetric */}
-      <circle cx="155" cy="200" r="14" fill="none" stroke="#333" strokeWidth="1.2" />
-      <line x1="141" y1="200" x2="169" y2="200" stroke="#333" strokeWidth="0.8" />
-      <line x1="155" y1="186" x2="155" y2="214" stroke="#333" strokeWidth="0.8" />
-      <text x="155" y="220" fontSize="10" fontFamily="sans-serif" fill="#333" textAnchor="middle">d1 ≤ φ6</text>
-
-      {/* d1 > φ6 — 2-flute with chip gullet */}
-      <circle cx="405" cy="200" r="14" fill="none" stroke="#333" strokeWidth="1.2" />
-      <line x1="391" y1="200" x2="419" y2="200" stroke="#333" strokeWidth="0.8" />
-      <line x1="405" y1="186" x2="405" y2="214" stroke="#333" strokeWidth="0.8" />
-      <path d="M398,195 Q402,200 398,205" fill="none" stroke="#333" strokeWidth="1" />
-      <path d="M412,195 Q408,200 412,205" fill="none" stroke="#333" strokeWidth="1" />
-      <text x="405" y="220" fontSize="10" fontFamily="sans-serif" fill="#333" textAnchor="middle">d1 &gt; φ6</text>
-
-      <defs>
-        <marker id="arr" markerWidth="6" markerHeight="6" refX="3" refY="3" orient="auto">
-          <path d="M0,0 L6,3 L0,6 Z" fill="#333" />
-        </marker>
-      </defs>
-    </svg>
+    <img
+      src="https://cdn.builder.io/api/v1/image/assets%2F2f0b492e34a14ec29346019ef2a7eaa9%2F7139563c55e3461aabcc35fca34bc014?format=webp&width=800&height=1200"
+      alt="2 Flute End Mill Diagram"
+      className="w-full max-w-[500px]"
+    />
   );
 }
 
@@ -176,23 +125,6 @@ export default function Narita2Flutes() {
           className="absolute inset-0 w-full h-full object-cover opacity-30 pointer-events-none select-none"
         />
 
-        {/* Decorative left side image */}
-        <div className="absolute left-0 top-[200px] w-28 md:w-40 pointer-events-none select-none overflow-hidden opacity-80">
-          <img
-            src="https://api.builder.io/api/v1/image/assets/TEMP/c89288ac87c3775f83f96ba0c942510960fee17b?width=271"
-            alt=""
-            className="w-full object-contain -translate-x-1/4"
-          />
-        </div>
-
-        {/* Decorative right side image */}
-        <div className="absolute right-0 top-[60px] w-32 md:w-44 pointer-events-none select-none overflow-hidden opacity-80">
-          <img
-            src="https://api.builder.io/api/v1/image/assets/TEMP/c89288ac87c3775f83f96ba0c942510960fee17b?width=271"
-            alt=""
-            className="w-full object-contain translate-x-1/4"
-          />
-        </div>
 
         {/* Main content */}
         <div className="relative max-w-[760px] mx-auto px-6 py-10">
@@ -234,14 +166,6 @@ export default function Narita2Flutes() {
             <SpecTable rows={longRows} />
           </div>
 
-          {/* Bottom decorative image */}
-          <div className="flex justify-end mt-8 pointer-events-none select-none">
-            <img
-              src="https://api.builder.io/api/v1/image/assets/TEMP/c89288ac87c3775f83f96ba0c942510960fee17b?width=271"
-              alt=""
-              className="h-36 w-auto object-contain opacity-70"
-            />
-          </div>
 
         </div>
       </div>
