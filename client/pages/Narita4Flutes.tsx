@@ -142,57 +142,11 @@ function WorkpieceMaterialTable() {
 
 function FourFluteDiagram() {
   return (
-    <svg viewBox="0 0 560 220" xmlns="http://www.w3.org/2000/svg" className="w-full max-w-[500px]">
-      {/* ── Profile view ─────────────────────────────── */}
-      {/* Shank (right portion) */}
-      <rect x="280" y="72" width="230" height="46" fill="none" stroke="#333" strokeWidth="1.2" />
-      {/* Cutting portion (left, slightly wider) */}
-      <rect x="80" y="64" width="200" height="62" fill="none" stroke="#333" strokeWidth="1.2" />
-      {/* Flat nose */}
-      <line x1="80" y1="64" x2="80" y2="126" stroke="#333" strokeWidth="1.8" />
-      {/* Junction taper lines */}
-      <line x1="280" y1="64" x2="280" y2="72" stroke="#333" strokeWidth="1.2" />
-      <line x1="280" y1="118" x2="280" y2="126" stroke="#333" strokeWidth="1.2" />
-      {/* Cutting flute lines (suggest 4-flute helix) */}
-      <path d="M130,64 Q155,95 130,126" fill="none" stroke="#333" strokeWidth="0.7" strokeDasharray="4,2" />
-      <path d="M180,64 Q205,95 180,126" fill="none" stroke="#333" strokeWidth="0.7" strokeDasharray="4,2" />
-      <path d="M230,64 Q255,95 230,126" fill="none" stroke="#333" strokeWidth="0.7" strokeDasharray="4,2" />
-
-      {/* d1 label top-left */}
-      <line x1="80" y1="50" x2="80" y2="64" stroke="#333" strokeWidth="0.8" />
-      <text x="72" y="46" fontSize="12" fontFamily="serif" fontStyle="italic" fill="#333" textAnchor="middle">d1</text>
-      <line x1="60" y1="50" x2="100" y2="50" stroke="#333" strokeWidth="0.8" />
-
-      {/* d2 label top-right */}
-      <line x1="510" y1="50" x2="510" y2="72" stroke="#333" strokeWidth="0.8" />
-      <text x="520" y="46" fontSize="12" fontFamily="serif" fontStyle="italic" fill="#333" textAnchor="start">d2</text>
-      <line x1="498" y1="50" x2="524" y2="50" stroke="#333" strokeWidth="0.8" />
-      <line x1="498" y1="118" x2="524" y2="118" stroke="#333" strokeWidth="0.8" />
-      <line x1="510" y1="118" x2="510" y2="130" stroke="#333" strokeWidth="0.8" />
-
-      {/* l2 dimension (cutting length) */}
-      <line x1="80" y1="140" x2="280" y2="140" stroke="#333" strokeWidth="0.8" />
-      <line x1="80" y1="135" x2="80" y2="145" stroke="#333" strokeWidth="0.8" />
-      <line x1="280" y1="135" x2="280" y2="145" stroke="#333" strokeWidth="0.8" />
-      <text x="180" y="154" fontSize="12" fontFamily="serif" fontStyle="italic" fill="#333" textAnchor="middle">l2</text>
-
-      {/* l1 dimension (overall length) */}
-      <line x1="80" y1="162" x2="510" y2="162" stroke="#333" strokeWidth="0.8" />
-      <line x1="80" y1="157" x2="80" y2="167" stroke="#333" strokeWidth="0.8" />
-      <line x1="510" y1="157" x2="510" y2="167" stroke="#333" strokeWidth="0.8" />
-      <text x="295" y="176" fontSize="12" fontFamily="serif" fontStyle="italic" fill="#333" textAnchor="middle">l1</text>
-
-      {/* ── Cross-section (4-flute pattern) ─────────── */}
-      <circle cx="280" cy="200" r="14" fill="none" stroke="#333" strokeWidth="1.2" />
-      {/* 4-flute cross lines */}
-      <line x1="266" y1="200" x2="294" y2="200" stroke="#333" strokeWidth="0.8" />
-      <line x1="280" y1="186" x2="280" y2="214" stroke="#333" strokeWidth="0.8" />
-      {/* 4 flute arcs */}
-      <path d="M273,193 Q277,200 273,207" fill="none" stroke="#333" strokeWidth="1" />
-      <path d="M287,193 Q283,200 287,207" fill="none" stroke="#333" strokeWidth="1" />
-      <path d="M273,193 Q280,197 287,193" fill="none" stroke="#333" strokeWidth="1" />
-      <path d="M273,207 Q280,203 287,207" fill="none" stroke="#333" strokeWidth="1" />
-    </svg>
+    <img
+      src="/four-flute-diagram.svg"
+      alt="4 Flute End Mill Diagram"
+      className="w-full max-w-[500px]"
+    />
   );
 }
 
