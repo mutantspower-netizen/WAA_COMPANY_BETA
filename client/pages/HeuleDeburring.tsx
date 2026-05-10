@@ -47,7 +47,7 @@ export default function HeuleDeburring() {
             {/* Product image — left */}
             <div className="flex-1 flex items-center justify-center">
               <img
-                src="https://api.builder.io/api/v1/image/assets/TEMP/76a1352e2bf60bff0801ff3604dce47e3428c16f?width=756"
+                src="\client\pages\img\1248-COFA_Sortiment_shade_7680x4320.png"
                 alt="COFA Deburring Tools"
                 className="w-full max-w-[380px] object-contain"
               />

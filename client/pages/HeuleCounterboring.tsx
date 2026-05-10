@@ -48,7 +48,7 @@ export default function HeuleCounterboring() {
             {/* Product image — left */}
             <div className="flex-1 flex items-center justify-center">
               <img
-                src="https://api.builder.io/api/v1/image/assets/TEMP/c42fb1c6bd8505c653d493a1b96543983be13fa4?width=756"
+                src="\client\pages\img\BSF_no_bg.png"
                 alt="BSF Counterboring Tools"
                 className="w-full max-w-[380px] object-contain"
               />
@@ -68,7 +68,10 @@ export default function HeuleCounterboring() {
           <div className="flex flex-col sm:flex-row items-center gap-8">
             {/* Content — left, right-aligned */}
             <div className="flex-1 flex flex-col gap-3 items-end text-right">
-              <h2 className="font-sarabun text-[#B30B0F] text-4xl md:text-5xl font-bold">SOLO</h2>
+              <div className="flex items-center justify-end gap-4">
+                <h2 className="font-sarabun text-[#B30B0F] text-4xl md:text-5xl font-bold">SOLO</h2>
+               
+              </div>
               <p className="font-sarabun text-[14px] text-[#1e1e1e] leading-snug max-w-[320px]">
                 Forwards and backwards counterboring and
                 backspotfacing in one single pass.
@@ -79,21 +82,13 @@ export default function HeuleCounterboring() {
 
             {/* Three SOLO tool images — right */}
             <div className="flex-1 flex items-end justify-center gap-4">
+             
               <img
-                src="https://api.builder.io/api/v1/image/assets/TEMP/c42fb1c6bd8505c653d493a1b96543983be13fa4?width=378"
-                alt="SOLO Tool variant 1"
-                className="h-48 md:h-60 w-auto object-contain"
-              />
-              <img
-                src="https://api.builder.io/api/v1/image/assets/TEMP/c42fb1c6bd8505c653d493a1b96543983be13fa4?width=378"
+                src="\client\pages\img\SOLO_no_bg.png"
                 alt="SOLO Tool variant 2"
                 className="h-44 md:h-56 w-auto object-contain"
               />
-              <img
-                src="https://api.builder.io/api/v1/image/assets/TEMP/c42fb1c6bd8505c653d493a1b96543983be13fa4?width=378"
-                alt="SOLO Tool variant 3"
-                className="h-40 md:h-52 w-auto object-contain"
-              />
+             
             </div>
           </div>
 

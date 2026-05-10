@@ -43,7 +43,7 @@ export default function HeuleDrillingCombine() {
           <div className="flex flex-col sm:flex-row items-center gap-8 mb-20">
             <div className="flex-1 flex items-center justify-center">
               <img
-                src="https://api.builder.io/api/v1/image/assets/TEMP/a75ac0d3b55fcbce90714a96d5fef54bf607a8e6?width=756"
+                src="/client\pages\img\VEX.png"
                 alt="VEX Drilling Tools"
                 className="w-full max-w-[380px] object-contain"
               />
@@ -68,7 +68,7 @@ export default function HeuleDrillingCombine() {
             </div>
             <div className="flex-1 flex items-center justify-center">
               <img
-                src="https://api.builder.io/api/v1/image/assets/TEMP/c42fb1c6bd8505c653d493a1b96543983be13fa4?width=756"
+                src="/client\pages\img\DCC.png"
                 alt="DCC Drilling Tools"
                 className="w-full max-w-[380px] object-contain"
               />
@@ -79,7 +79,7 @@ export default function HeuleDrillingCombine() {
           <div className="flex flex-col sm:flex-row items-center gap-8">
             <div className="flex-1 flex items-center justify-center">
               <img
-                src="https://api.builder.io/api/v1/image/assets/TEMP/76a1352e2bf60bff0801ff3604dce47e3428c16f?width=756"
+                src="/client\pages\img\Module_Line.png"
                 alt="Module Line Drilling Tools"
                 className="w-full max-w-[380px] object-contain"
               />
