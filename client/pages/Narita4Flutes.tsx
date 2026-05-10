@@ -209,32 +209,6 @@ export default function Narita4Flutes() {
           className="absolute inset-0 w-full h-full object-cover opacity-30 pointer-events-none select-none"
         />
 
-        {/* Decorative left side image */}
-        <div className="absolute left-0 top-[260px] w-28 md:w-44 pointer-events-none select-none overflow-hidden opacity-80">
-          <img
-            src="https://api.builder.io/api/v1/image/assets/TEMP/0823aeb34f173a738e8884f3e139142cb7a02929?width=136"
-            alt=""
-            className="w-full object-contain -translate-x-1/4"
-          />
-        </div>
-
-        {/* Decorative right side image */}
-        <div className="absolute right-0 top-[60px] w-32 md:w-44 pointer-events-none select-none overflow-hidden opacity-80">
-          <img
-            src="https://api.builder.io/api/v1/image/assets/TEMP/0823aeb34f173a738e8884f3e139142cb7a02929?width=136"
-            alt=""
-            className="w-full object-contain translate-x-1/4"
-          />
-        </div>
-
-        {/* Decorative right lower image */}
-        <div className="absolute right-0 top-[900px] w-28 md:w-40 pointer-events-none select-none overflow-hidden opacity-70">
-          <img
-            src="https://api.builder.io/api/v1/image/assets/TEMP/0823aeb34f173a738e8884f3e139142cb7a02929?width=136"
-            alt=""
-            className="w-full object-contain translate-x-1/4"
-          />
-        </div>
 
         {/* Main content */}
         <div className="relative max-w-[760px] mx-auto px-6 py-10">
