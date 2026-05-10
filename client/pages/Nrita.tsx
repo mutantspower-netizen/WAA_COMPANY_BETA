@@ -126,7 +126,7 @@ export default function Nrita() {
           {/* 4 FULTES END MILL — image left, content right */}
           <div className="flex flex-col sm:flex-row items-center gap-4 py-8">
             <EndMillImage
-              src="https://api.builder.io/api/v1/image/assets/TEMP/0823aeb34f173a738e8884f3e139142cb7a02929?width=136"
+              src="https://api.builder.io/api/v1/image/assets/TEMP/0823aeb34f173a738e8884f3e139142cb7a02929?width=400"
               alt="4 Flutes End Mill"
               rotate={0}
             />
