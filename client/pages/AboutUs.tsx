@@ -121,7 +121,7 @@ export default function AboutUs() {
           {/* Center column: Product image */}
           <div className="flex justify-center">
             <img
-              src="https://api.builder.io/api/v1/image/assets/TEMP/36626619bb3fb45dad00e2e080b78c9479577f82?width=760"
+              src="https://api.builder.io/api/v1/image/assets/TEMP/36626619bb3fb45dad00e2e080b78c9479577f82?width=1200"
               alt="Industrial Products"
               className="w-full max-w-[380px] rounded-[20px] object-cover"
               style={{ minHeight: "400px", maxHeight: "540px" }}
