@@ -3,7 +3,7 @@ import Footer from "@/components/Footer";
 
 function SpecButton() {
   return (
-    <button className="inline-flex items-center gap-2 bg-[#B30B0F] text-white font-sarabun text-sm font-semibold px-4 py-1.5 rounded-full hover:bg-[#950a0d] transition-colors">
+    <button className="inline-flex items-center gap-2 bg-[#B30B0F] text-white font-sarabun text-sm font-semibold px-4 py-1.5 rounded-full hover:bg-[#950a0d] transition-colors max-w-[145px]">
       Specification
       <span className="flex items-center justify-center bg-white rounded-full w-5 h-5 flex-shrink-0">
         <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -48,7 +48,7 @@ export default function HeuleCounterboring() {
             {/* Product image — left */}
             <div className="flex-1 flex items-center justify-center">
               <img
-                src="\client\pages\img\BSF_no_bg.png"
+                src="./client/pages/img/BSF_no_bg.png"
                 alt="BSF Counterboring Tools"
                 className="w-full max-w-[380px] object-contain"
               />
@@ -84,7 +84,7 @@ export default function HeuleCounterboring() {
             <div className="flex-1 flex items-end justify-center gap-4">
              
               <img
-                src="\client\pages\img\SOLO_no_bg.png"
+                src="./client/pages/img/SOLO_no_bg.png"
                 alt="SOLO Tool variant 2"
                 className="h-44 md:h-56 w-auto object-contain"
               />

@@ -71,9 +71,10 @@ export default function Nrita() {
         {/* Brand section */}
         <section className="relative flex flex-col items-center py-10 px-6 text-center">
           <img
-            src="https://api.builder.io/api/v1/image/assets/TEMP/19f8b09e554ec6d01e98fb980fc860612632e4f1?width=396"
+            src="https://cdn.builder.io/api/v1/image/assets%2F2f0b492e34a14ec29346019ef2a7eaa9%2Fa1a976449ce240c79ae5be2a5b585afe?format=webp&width=800&height=1200"
             alt="Narita End Mills"
             className="h-16 w-auto mb-5"
+            style={{ maxWidth: "500px", minHeight: "200px" }}
           />
           <p className="font-sarabun text-[13px] text-[#1e1e1e] leading-relaxed max-w-[720px]">
             Narita end mills are engineered for high-performance machining across a full range, including ball nose 2 flutes,

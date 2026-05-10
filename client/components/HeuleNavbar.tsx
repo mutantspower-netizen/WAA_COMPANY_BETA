@@ -26,9 +26,10 @@ export default function HeuleNavbar() {
           </Link>
           <Link to="/heule">
             <img
-              src="https://api.builder.io/api/v1/image/assets/TEMP/b00c629ce1a5990df98e157a5db126fa2eabdc3d?width=200"
+              src="https://cdn.builder.io/api/v1/image/assets%2F2f0b492e34a14ec29346019ef2a7eaa9%2F4ab1ea9089ae4a39adad0a77c00e7844?format=webp&width=800&height=1200"
               alt="Heule Precision Tools"
               className="h-8 w-auto"
+              style={{ maxWidth: "500px", minHeight: "40px" }}
             />
           </Link>
         </div>
