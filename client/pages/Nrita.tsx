@@ -94,7 +94,7 @@ export default function Nrita() {
             <EndMillImage
               src="https://api.builder.io/api/v1/image/assets/TEMP/30d7875b1c393e6c980a64a2ba4ea56f5a4452dd?width=274"
               alt="Ball Nose 2 Flute"
-              rotate={280}
+              rotate={0}
             />
             <div className="flex-1 flex flex-col gap-3 px-2">
               <h2 className="font-sarabun text-[#B30B0F] text-3xl font-semibold">BALL NOSE 2 FLUTE</h2>
@@ -118,7 +118,7 @@ export default function Nrita() {
               <EndMillImage
                 src="https://api.builder.io/api/v1/image/assets/TEMP/c89288ac87c3775f83f96ba0c942510960fee17b?width=271"
                 alt="2 Flutes End Mill"
-                rotate={-90}
+                rotate={0}
               />
             </div>
           </div>
@@ -128,7 +128,7 @@ export default function Nrita() {
             <EndMillImage
               src="https://api.builder.io/api/v1/image/assets/TEMP/0823aeb34f173a738e8884f3e139142cb7a02929?width=136"
               alt="4 Flutes End Mill"
-              rotate={90}
+              rotate={0}
             />
             <div className="flex-1 flex flex-col gap-3 px-2">
               <h2 className="font-sarabun text-[#B30B0F] text-3xl font-semibold">4 FULTES END MILL</h2>
