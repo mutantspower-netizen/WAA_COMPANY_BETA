@@ -16,8 +16,7 @@ export default function Placeholder({ title }: Props) {
           </h1>
           <div className="w-16 h-1 bg-[#F51111] mx-auto my-4" />
           <p className="font-sarabun text-[16px] text-[#746969] font-semibold leading-relaxed">
-            This page is coming soon. Continue prompting to fill in the content
-            for this section.
+            This page is coming soon.&nbsp;
           </p>
         </div>
       </main>

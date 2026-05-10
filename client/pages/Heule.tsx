@@ -12,6 +12,7 @@ const products = [
       "https://api.builder.io/api/v1/image/assets/TEMP/76a1352e2bf60bff0801ff3604dce47e3428c16f?width=378",
     imgAlt: "Deburring tool",
     imgSide: "right" as const,
+    href: "/heule/deburring",
   },
   {
     id: "counterboring",
@@ -22,6 +23,7 @@ const products = [
       "https://api.builder.io/api/v1/image/assets/TEMP/c42fb1c6bd8505c653d493a1b96543983be13fa4?width=378",
     imgAlt: "Counterboring tool",
     imgSide: "left" as const,
+    href: "/heule/counterboring",
   },
   {
     id: "chamfering",
@@ -32,6 +34,7 @@ const products = [
       "https://api.builder.io/api/v1/image/assets/TEMP/2d9a80bd6e54ebb950d6d516a658840ec5a01131?width=378",
     imgAlt: "Chamfering tool",
     imgSide: "right" as const,
+    href: "/heule/chamfering",
   },
   {
     id: "drilling",
@@ -42,6 +45,7 @@ const products = [
       "https://api.builder.io/api/v1/image/assets/TEMP/a75ac0d3b55fcbce90714a96d5fef54bf607a8e6?width=380",
     imgAlt: "Drilling combine tool",
     imgSide: "left" as const,
+    href: "/heule/drilling-combine",
   },
 ];
 
@@ -133,6 +137,7 @@ interface ProductCellProps {
   imgSrc: string;
   imgAlt: string;
   imgSide: "left" | "right";
+  href?: string;
 }
 
 function ProductCell({
@@ -142,48 +147,51 @@ function ProductCell({
   imgSrc,
   imgAlt,
   imgSide,
+  href,
 }: ProductCellProps) {
   const isImgLeft = imgSide === "left";
+  const cellClass = "bg-white border border-black flex items-center justify-between p-4 sm:p-6 min-h-[160px] sm:min-h-[220px] relative overflow-hidden hover:bg-gray-50 transition-colors";
 
-  return (
-    <div className="bg-white border border-black flex items-center justify-between p-4 sm:p-6 min-h-[160px] sm:min-h-[220px] relative overflow-hidden">
-      {isImgLeft ? (
-        <>
-          <img
-            src={imgSrc}
-            alt={imgAlt}
-            className="h-[120px] sm:h-[185px] w-auto object-contain shrink-0"
-          />
-          <div
-            className={`flex flex-col ${titleAlign === "left" ? "items-start" : "items-end"} gap-1 flex-1 pl-3`}
-          >
-            <span className="font-sarabun text-[11px] sm:text-[12px] font-semibold text-[#B30B0F]">
-              {label}
-            </span>
-            <span className="font-sarabun text-[22px] sm:text-[32px] font-normal text-black leading-tight">
-              {title}
-            </span>
-          </div>
-        </>
-      ) : (
-        <>
-          <div
-            className={`flex flex-col ${titleAlign === "right" ? "items-end" : "items-start"} gap-1 flex-1 pr-3`}
-          >
-            <span className="font-sarabun text-[11px] sm:text-[12px] font-semibold text-[#B30B0F]">
-              {label}
-            </span>
-            <span className="font-sarabun text-[22px] sm:text-[32px] font-normal text-black leading-tight text-right">
-              {title}
-            </span>
-          </div>
-          <img
-            src={imgSrc}
-            alt={imgAlt}
-            className="h-[120px] sm:h-[185px] w-auto object-contain shrink-0"
-          />
-        </>
-      )}
-    </div>
+  const inner = isImgLeft ? (
+    <>
+      <img
+        src={imgSrc}
+        alt={imgAlt}
+        className="h-[120px] sm:h-[185px] w-auto object-contain shrink-0"
+      />
+      <div
+        className={`flex flex-col ${titleAlign === "left" ? "items-start" : "items-end"} gap-1 flex-1 pl-3`}
+      >
+        <span className="font-sarabun text-[11px] sm:text-[12px] font-semibold text-[#B30B0F]">
+          {label}
+        </span>
+        <span className="font-sarabun text-[22px] sm:text-[32px] font-normal text-black leading-tight">
+          {title}
+        </span>
+      </div>
+    </>
+  ) : (
+    <>
+      <div
+        className={`flex flex-col ${titleAlign === "right" ? "items-end" : "items-start"} gap-1 flex-1 pr-3`}
+      >
+        <span className="font-sarabun text-[11px] sm:text-[12px] font-semibold text-[#B30B0F]">
+          {label}
+        </span>
+        <span className="font-sarabun text-[22px] sm:text-[32px] font-normal text-black leading-tight text-right">
+          {title}
+        </span>
+      </div>
+      <img
+        src={imgSrc}
+        alt={imgAlt}
+        className="h-[120px] sm:h-[185px] w-auto object-contain shrink-0"
+      />
+    </>
   );
+
+  if (href) {
+    return <Link to={href} className={cellClass}>{inner}</Link>;
+  }
+  return <div className={cellClass}>{inner}</div>;
 }
