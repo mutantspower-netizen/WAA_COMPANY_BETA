@@ -126,7 +126,7 @@ function WorkPieceMaterialsTable() {
 function EndMillDiagram() {
   return (
     <img
-      src="/ball-nose-diagram.svg"
+      src="https://cdn.builder.io/api/v1/image/assets%2F2f0b492e34a14ec29346019ef2a7eaa9%2F48e643600ae24ca382a281bad2ee5e6d?format=webp&width=800&height=1200"
       alt="Ball Nose End Mill Diagram"
       className="w-full max-w-[480px]"
     />
