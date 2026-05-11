@@ -77,7 +77,7 @@ export default function HeuleDeburring() {
                 Bore diameter 1.0 mm to 2.1 mm: forwards and backwards deburring of
                 even and slightly uneven bores in one single pass
               </p>
-              <SpecButton to="/heule/deburring" />
+              <SpecButton to="/heule/dl2-deburring" />
             </div>
 
             {/* Three DL2 tool images — right */}
