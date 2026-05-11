@@ -1,5 +1,8 @@
 import HeuleNavbar from "@/components/HeuleNavbar";
 import Footer from "@/components/Footer";
+import vexImage from "./img/VEX.png";
+import dccImage from "./img/DCC.png";
+import moduleLineImage from "./img/Module_Line.png";
 
 function SpecButton() {
   return (
@@ -43,7 +46,7 @@ export default function HeuleDrillingCombine() {
           <div className="flex flex-col sm:flex-row items-center gap-8 mb-20">
             <div className="flex-1 flex items-center justify-center">
               <img
-                src="./client/pages/img/VEX.png"
+                src={vexImage}
                 alt="VEX Drilling Tools"
                 className="w-full max-w-[380px] object-contain"
               />
@@ -68,7 +71,7 @@ export default function HeuleDrillingCombine() {
             </div>
             <div className="flex-1 flex items-center justify-center">
               <img
-                src="./client/pages/img/DCC.png"
+                src={dccImage}
                 alt="DCC Drilling Tools"
                 className="w-full max-w-[380px] object-contain"
               />
@@ -79,7 +82,7 @@ export default function HeuleDrillingCombine() {
           <div className="flex flex-col sm:flex-row items-center gap-8">
             <div className="flex-1 flex items-center justify-center">
               <img
-                src="./client/pages/img/Module_Line.png"
+                src={moduleLineImage}
                 alt="Module Line Drilling Tools"
                 className="w-full max-w-[380px] object-contain"
               />

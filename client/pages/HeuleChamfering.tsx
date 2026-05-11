@@ -1,5 +1,8 @@
 import HeuleNavbar from "@/components/HeuleNavbar";
 import Footer from "@/components/Footer";
+import snapImage from "./img/snap_no_bg.png";
+import defaImage from "./img/DEFA_vno_bg.png";
+import ghkImage from "./img/gh-k_no_bg.png";
 
 function SpecButton() {
   return (
@@ -47,7 +50,7 @@ export default function HeuleChamfering() {
           <div className="flex flex-col sm:flex-row items-center gap-8 mb-20">
             <div className="flex-1 flex items-center justify-center">
               <img
-                src="./client/pages/img/snap_no_bg.png"
+                src={snapImage}
                 alt="SNAP Chamfering Tools"
                 className="w-full max-w-[380px] object-contain"
               />
@@ -72,7 +75,7 @@ export default function HeuleChamfering() {
             </div>
             <div className="flex-1 flex items-center justify-center">
               <img
-                src="./client/pages/img/DEFA_vno_bg.png"
+                src={defaImage}
                 alt="DEFA Chamfering Tools"
                 className="w-full max-w-[380px] object-contain"
               />
@@ -83,7 +86,7 @@ export default function HeuleChamfering() {
           <div className="flex flex-col sm:flex-row items-center gap-8">
             <div className="flex-1 flex items-center justify-center">
               <img
-                src="./client/pages/img/gh-k_no_bg.png"
+                src={ghkImage}
                 alt="GH-K Chamfering Tools"
                 className="w-full max-w-[380px] object-contain"
               />

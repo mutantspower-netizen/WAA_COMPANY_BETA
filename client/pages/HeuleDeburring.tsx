@@ -1,6 +1,7 @@
 import HeuleNavbar from "@/components/HeuleNavbar";
 import Footer from "@/components/Footer";
 import { Link } from "react-router-dom";
+import cofaImage from "./img/1248-COFA_Sortiment_shade_7680x4320.png";
 
 function SpecButton({ to }: { to: string }) {
   return (
@@ -51,7 +52,7 @@ export default function HeuleDeburring() {
             {/* Product image — left */}
             <div className="flex-1 flex items-center justify-center">
               <img
-                src="./client/pages/img/1248-COFA_Sortiment_shade_7680x4320.png"
+                src={cofaImage}
                 alt="COFA Deburring Tools"
                 className="w-full max-w-[380px] object-contain"
               />

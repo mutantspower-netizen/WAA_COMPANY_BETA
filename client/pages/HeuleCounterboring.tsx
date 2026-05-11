@@ -1,5 +1,7 @@
 import HeuleNavbar from "@/components/HeuleNavbar";
 import Footer from "@/components/Footer";
+import bsfImage from "./img/BSF_no_bg.png";
+import soloImage from "./img/SOLO_no_bg.png";
 
 function SpecButton() {
   return (
@@ -48,7 +50,7 @@ export default function HeuleCounterboring() {
             {/* Product image — left */}
             <div className="flex-1 flex items-center justify-center">
               <img
-                src="./client/pages/img/BSF_no_bg.png"
+                src={bsfImage}
                 alt="BSF Counterboring Tools"
                 className="w-full max-w-[380px] object-contain"
               />
@@ -84,7 +86,7 @@ export default function HeuleCounterboring() {
             <div className="flex-1 flex items-end justify-center gap-4">
              
               <img
-                src="./client/pages/img/SOLO_no_bg.png"
+                src={soloImage}
                 alt="SOLO Tool variant 2"
                 className="h-44 md:h-56 w-auto object-contain"
               />

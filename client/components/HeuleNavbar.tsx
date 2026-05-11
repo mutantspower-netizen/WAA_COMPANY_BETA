@@ -3,7 +3,9 @@ import { Link } from "react-router-dom";
 
 const NAV_LINKS = [
   { label: "DEBURRING", to: "/heule/deburring" },
-  { label: "SALE SERVICE", to: "/contact" },
+  { label: "CHAMFERING", to: "/heule/chamfering" },
+  { label: "COUNTERBORING", to: "/heule/counterboring" },
+  { label: "DRILLING COMBINE", to: "/heule/drilling-combine" },
   { label: "CONTACT", to: "/contact" },
 ];
 
