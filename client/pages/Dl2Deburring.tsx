@@ -56,18 +56,6 @@ export default function Dl2Deburring() {
             alt=""
             className="absolute inset-0 w-full h-full object-cover select-none pointer-events-none"
           />
-          {/* Left tool */}
-          <img
-            src="https://api.builder.io/api/v1/image/assets/TEMP/76a1352e2bf60bff0801ff3604dce47e3428c16f?width=378"
-            alt=""
-            className="absolute left-0 bottom-0 w-[30%] max-w-[260px] object-contain select-none pointer-events-none translate-y-4 -translate-x-4 opacity-75"
-          />
-          {/* Right tool */}
-          <img
-            src="https://api.builder.io/api/v1/image/assets/TEMP/76a1352e2bf60bff0801ff3604dce47e3428c16f?width=378"
-            alt=""
-            className="absolute right-0 top-0 w-[30%] max-w-[260px] object-contain select-none pointer-events-none -translate-y-4 translate-x-4 opacity-75 scale-x-[-1]"
-          />
           <div className="relative z-10 flex flex-col items-center text-center px-6 py-16 max-w-[860px] mx-auto">
             <h1 className="font-sarabun text-[#A32A19] text-3xl md:text-4xl lg:text-5xl font-semibold mb-4">
               DL2 DEBURRING
