@@ -121,11 +121,6 @@ export default function Dl2Deburring() {
 
         {/* ── OPERATING PRINCIPLE + CONTROLLED DEBURRING ───────────────── */}
         <section className="relative py-12 md:py-16">
-          <img
-            src="https://api.builder.io/api/v1/image/assets/TEMP/febfea55ce3a087263564fed51943e7e878f46f3?width=2896"
-            alt=""
-            className="absolute inset-0 w-full h-full object-cover select-none pointer-events-none opacity-25"
-          />
           <div className="relative max-w-[1100px] mx-auto px-6">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
               {/* Left: Operating Principle */}
