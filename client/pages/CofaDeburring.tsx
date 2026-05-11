@@ -79,13 +79,13 @@ export default function CofaDeburring() {
           <img
             src="https://api.builder.io/api/v1/image/assets/TEMP/1b038a3787022760f8e21dc8b24ce641443538a2?width=1984"
             alt=""
-            className="absolute left-0 bottom-0 w-[55%] max-w-[520px] object-contain select-none pointer-events-none translate-y-4 -translate-x-8 opacity-95"
+            className="absolute left-0 bottom-0 w-[35%] max-w-[300px] object-contain select-none pointer-events-none translate-y-4 -translate-x-8 opacity-75"
           />
           {/* Right tool */}
           <img
             src="https://api.builder.io/api/v1/image/assets/TEMP/d66026a4e4dbe61612ec014b2e2699b9396b6f0f?width=1984"
             alt=""
-            className="absolute right-0 top-0 w-[55%] max-w-[520px] object-contain select-none pointer-events-none -translate-y-4 translate-x-8 opacity-95"
+            className="absolute right-0 top-0 w-[35%] max-w-[300px] object-contain select-none pointer-events-none -translate-y-4 translate-x-8 opacity-75"
           />
           {/* Centered text */}
           <div className="relative z-10 flex flex-col items-center text-center px-6 py-16 max-w-[860px] mx-auto">
