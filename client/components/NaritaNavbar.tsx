@@ -3,7 +3,6 @@ import { Link, useLocation } from "react-router-dom";
 
 const NAV_LINKS = [
   { label: "PRODUCT", to: "/nrita" },
-  { label: "SALE SERVICE", to: "/contact" },
   { label: "CONTACT", to: "/contact" },
 ];
 
@@ -29,7 +28,7 @@ export default function NaritaNavbar() {
             <img
               src="https://api.builder.io/api/v1/image/assets/TEMP/19f8b09e554ec6d01e98fb980fc860612632e4f1?width=300"
               alt="Narita End Mills"
-              className="h-9 w-auto"
+              className="h-20 w-200 translate-y-4 object-contain"
             />
           </Link>
         </div>

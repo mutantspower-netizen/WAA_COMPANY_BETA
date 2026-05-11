@@ -138,6 +138,7 @@ export default function Index() {
               CONSUMABLE
             </p>
             <div className="flex items-center gap-3">
+              <span className="hidden sm:block h-px w-12 bg-[#F51111] shrink-0" />
               <h2 className="font-noto-serif text-[16px] sm:text-[20px] font-medium text-black">
                 One stop solution for all machining consumables and industrial tooling
               </h2>

@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import Navbar from "@/components/Navbar";
+import Navbar from "@/components/NaritaNavbar";
 import Footer from "@/components/Footer";
 
 function SpecificationButton({ to }: { to?: string }) {
@@ -77,7 +77,7 @@ export default function Nrita() {
             className="h-16 w-auto mb-5"
             style={{ maxWidth: "500px", minHeight: "200px" }}
           />
-          <p className="font-sarabun text-[13px] text-[#1e1e1e] leading-relaxed max-w-[720px]">
+          <p className="font-sarabun text-[18px] text-[#1e1e1e] leading-relaxed max-w-[720px]">
             Narita end mills are engineered for high-performance machining across a full range, including ball nose 2 flutes,
             long-length ball nose, standard 2 flutes, extended 2 flutes, and 4 flutes options. Designed for pre-hardened and
             hardened steel up to HRC50, they feature ultra-fine carbide (0.3~0.5 μm) and TiAlN coating for excellent wear
