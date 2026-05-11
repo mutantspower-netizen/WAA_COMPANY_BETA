@@ -139,7 +139,7 @@ export default function Dl2Deburring() {
               {/* Center: Product image */}
               <div className="flex items-center justify-center">
                 <img
-                  src="https://cdn.builder.io/api/v1/image/assets%2F2f0b492e34a14ec29346019ef2a7eaa9%2Fc7a9c76507964f0fa8bed966ef6ec073?format=webp&width=800&height=1200"
+                  src="https://cdn.builder.io/api/v1/image/assets%2F2f0b492e34a14ec29346019ef2a7eaa9%2F8b4dad89ebff434c905ae86f36683acf?format=webp&width=800&height=1200"
                   alt="DL2 Tool"
                   className="w-full max-w-[260px] object-contain"
                 />
