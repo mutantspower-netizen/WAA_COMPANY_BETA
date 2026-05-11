@@ -133,7 +133,7 @@ export default function Index() {
             ))}
           </div>
 
-          <div className="flex flex-col items-start mt-12 md:mt-16 px-2">
+          <div className="flex flex-col items-center mt-12 md:mt-16 px-2">
             <p className="font-noto-serif text-[10px] font-semibold text-[#746969] tracking-widest uppercase mb-1">
               CONSUMABLE
             </p>
