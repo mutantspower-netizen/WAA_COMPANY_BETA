@@ -193,21 +193,17 @@ export default function CofaDeburring() {
           </div>
         </section>
 
-        {/* ── OPERATING PRINCIPLE ──────────────────────────────────────── */}
+        {/* ── OPERATING PRINCIPLE + IMAGE + MAXIMUM UNEVENNESS ──────────── */}
         <section className="relative py-12 md:py-16">
           <img
             src="https://api.builder.io/api/v1/image/assets/TEMP/091c1556916c9587f51a28f59014d90ac185e978?width=2896"
             alt=""
             className="absolute inset-0 w-full h-full object-cover select-none pointer-events-none opacity-25"
           />
-          <div className="relative max-w-[900px] mx-auto px-6">
-            <div className="flex flex-col md:flex-row gap-10 items-center">
-              <div className="flex-1 flex items-center justify-center">
-                <div className="w-full max-w-[360px] aspect-video bg-gray-200/60 rounded-lg flex items-center justify-center">
-                  <span className="text-gray-500 text-xs">Operating Principle Diagram</span>
-                </div>
-              </div>
-              <div className="flex-1">
+          <div className="relative max-w-[1100px] mx-auto px-6">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 items-center">
+              {/* Left: Operating Principle */}
+              <div className="flex flex-col justify-center">
                 <h2 className="font-sarabun text-[#A32A19] text-xl md:text-2xl font-semibold mb-3">
                   OPERATING PRINCIPLE
                 </h2>
@@ -217,20 +213,18 @@ export default function CofaDeburring() {
                   pivots into the tool body as it enters the bore. The result is a bore edge deburred with a radius form.
                 </p>
               </div>
-            </div>
-          </div>
-        </section>
 
-        {/* ── MAXIMUM UNEVENNESS ───────────────────────────────────────── */}
-        <section className="relative py-12 md:py-16">
-          <img
-            src="https://api.builder.io/api/v1/image/assets/TEMP/59460b3436a961710e2a5960760b4a43317ac5d9?width=2896"
-            alt=""
-            className="absolute inset-0 w-full h-full object-cover select-none pointer-events-none opacity-25"
-          />
-          <div className="relative max-w-[900px] mx-auto px-6">
-            <div className="flex flex-col md:flex-row gap-10 items-center">
-              <div className="flex-1 text-right">
+              {/* Center: Image */}
+              <div className="flex items-center justify-center">
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets%2F2f0b492e34a14ec29346019ef2a7eaa9%2Febeb565a9831444db25117ed98f1ba4a?format=webp&width=800&height=1200"
+                  alt="COFA Tool Design"
+                  className="w-full max-w-[280px] object-contain"
+                />
+              </div>
+
+              {/* Right: Maximum Unevenness */}
+              <div className="flex flex-col justify-center">
                 <h2 className="font-sarabun text-[#A32A19] text-xl md:text-2xl font-semibold mb-3">
                   MAXIMUM UNEVENNESS
                 </h2>
@@ -240,11 +234,6 @@ export default function CofaDeburring() {
                   angle of up to 30° for greater unevenness. For larger irregularities, tools and blades from the INDIVIDUAL
                   range, e.g. COFA-X, are used.
                 </p>
-              </div>
-              <div className="flex-1 flex items-center justify-center">
-                <div className="w-full max-w-[320px] aspect-square bg-gray-200/60 rounded-lg flex items-center justify-center">
-                  <span className="text-gray-500 text-xs">Unevenness Diagram</span>
-                </div>
               </div>
             </div>
           </div>
