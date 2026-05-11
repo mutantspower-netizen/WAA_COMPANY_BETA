@@ -143,6 +143,22 @@ export default function CofaDeburring() {
           </div>
         </section>
 
+        {/* ── CASSETTE TOOLS PRODUCT IMAGE ────────────────────────────── */}
+        <section className="relative py-12 md:py-16">
+          <img
+            src="https://api.builder.io/api/v1/image/assets/TEMP/091c1556916c9587f51a28f59014d90ac185e978?width=2896"
+            alt=""
+            className="absolute inset-0 w-full h-full object-cover select-none pointer-events-none opacity-25"
+          />
+          <div className="relative max-w-[900px] mx-auto px-6 flex items-center justify-center">
+            <img
+              src="https://cdn.builder.io/api/v1/image/assets%2F2f0b492e34a14ec29346019ef2a7eaa9%2F92f50dbd1528429b9ca459ecf71196a1?format=webp&width=800&height=1200"
+              alt="COFA Cassette Tools Sortiment"
+              className="w-full max-w-[500px] object-contain"
+            />
+          </div>
+        </section>
+
         {/* ── CASSETTE TOOLS ───────────────────────────────────────────── */}
         <section className="relative py-12 md:py-16">
           <img
@@ -154,38 +170,25 @@ export default function CofaDeburring() {
             <h2 className="font-sarabun text-[#A32A19] text-2xl md:text-3xl font-semibold mb-6">
               CASSETTE TOOLS
             </h2>
-            <div className="flex flex-col md:flex-row gap-8 items-start">
-              <div className="flex-1 overflow-x-auto">
-                <table className="w-full border-collapse text-sm font-sarabun">
-                  <thead>
-                    <tr className="bg-[#A32A19] text-white">
-                      <th className="border border-[#B8B8B8] px-4 py-2 text-left font-semibold whitespace-nowrap">Bore Ø Range (mm)</th>
-                      <th className="border border-[#B8B8B8] px-4 py-2 text-left font-semibold whitespace-nowrap">Deburring Capacity Max. (mm)</th>
-                      <th className="border border-[#B8B8B8] px-4 py-2 text-left font-semibold whitespace-nowrap">Series</th>
+            <div className="overflow-x-auto">
+              <table className="w-full border-collapse text-sm font-sarabun">
+                <thead>
+                  <tr className="bg-[#A32A19] text-white">
+                    <th className="border border-[#B8B8B8] px-4 py-2 text-left font-semibold whitespace-nowrap">Bore Ø Range (mm)</th>
+                    <th className="border border-[#B8B8B8] px-4 py-2 text-left font-semibold whitespace-nowrap">Deburring Capacity Max. (mm)</th>
+                    <th className="border border-[#B8B8B8] px-4 py-2 text-left font-semibold whitespace-nowrap">Series</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {cassetteRows.map((row, i) => (
+                    <tr key={i} className={i % 2 === 0 ? "bg-white/70" : "bg-white/40"}>
+                      <td className="border border-[#B8B8B8] px-4 py-2">{row.bore}</td>
+                      <td className="border border-[#B8B8B8] px-4 py-2">{row.capacity}</td>
+                      <td className="border border-[#B8B8B8] px-4 py-2">{row.series}</td>
                     </tr>
-                  </thead>
-                  <tbody>
-                    {cassetteRows.map((row, i) => (
-                      <tr key={i} className={i % 2 === 0 ? "bg-white/70" : "bg-white/40"}>
-                        <td className="border border-[#B8B8B8] px-4 py-2">{row.bore}</td>
-                        <td className="border border-[#B8B8B8] px-4 py-2">{row.capacity}</td>
-                        <td className="border border-[#B8B8B8] px-4 py-2">{row.series}</td>
-                      </tr>
-                    ))}
-                  </tbody>
-                </table>
-              </div>
-              <div className="flex flex-row md:flex-col gap-4 items-center md:items-end justify-center flex-shrink-0">
-                <div className="w-16 md:w-20 h-40 md:h-52 bg-gradient-to-b from-gray-300 to-gray-500 rounded opacity-60 flex items-center justify-center">
-                  <span className="text-white text-[9px] font-semibold text-center leading-tight px-1">C6 Gas</span>
-                </div>
-                <div className="w-16 md:w-20 h-44 md:h-56 bg-gradient-to-b from-gray-300 to-gray-500 rounded opacity-60 flex items-center justify-center">
-                  <span className="text-white text-[9px] font-semibold text-center leading-tight px-1">C8 Gas</span>
-                </div>
-                <div className="w-16 md:w-20 h-48 md:h-60 bg-gradient-to-b from-gray-300 to-gray-500 rounded opacity-60 flex items-center justify-center">
-                  <span className="text-white text-[9px] font-semibold text-center leading-tight px-1">C12 Gas</span>
-                </div>
-              </div>
+                  ))}
+                </tbody>
+              </table>
             </div>
           </div>
         </section>
