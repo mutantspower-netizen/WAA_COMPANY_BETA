@@ -61,9 +61,7 @@ export default function Dl2Deburring() {
              Solo CounterBoring 
             </h1>
             <p className="font-sarabun text-black text-sm md:text-[15px] leading-relaxed max-w-[680px]">
-              The Solo CounterBoring tool by HEULE Werkzeug AG is designed for precise counterboring of drilled holes in a single continuous operation. 
-              What makes Solo CounterBoring unique is its interchangeable cutting system, which allows different counterbore sizes to be achieved for various bore diameters while maintaining consistent and accurate edge quality. 
-              The tool operates efficiently without the need for manual repositioning, reducing machining time and improving productivity in CNC applications. Its compact design and cylindrical shank provide stable and reliable performance, making Solo CounterBoring an ideal solution for high-precision counterboring operations where flexibility, repeatability, and process efficiency are essential.
+              The SOLO tool by HEULE Werkzeug AG is a high-performance automatic counterboring and spotfacing solution designed for efficient front and back machining of holes in a single continuous operation. What makes SOLO unique is its ability to perform precise counterboring and spotfacing on both sides of a workpiece without repositioning, significantly reducing cycle times and improving machining efficiency. Engineered for use in CNC, transfer, dial, and multi-spindle machines, the tool is optimized for high-volume production environments where reliability, precision, and process consistency are essential. Its robust automatic operating system ensures dependable performance across demanding machining applications, making SOLO an ideal solution for modern manufacturing processes requiring high productivity and accurate finishing.
             </p>
           </div>
         </section>

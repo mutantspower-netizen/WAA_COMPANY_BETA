@@ -58,12 +58,10 @@ export default function Dl2Deburring() {
           />
           <div className="relative z-10 flex flex-col items-center text-center px-6 py-16 max-w-[860px] mx-auto">
             <h1 className="font-sarabun text-[#A32A19] text-3xl md:text-4xl lg:text-5xl font-semibold mb-4">
-             VEX Deburring
+             VEX Drilling Combine
             </h1>
             <p className="font-sarabun text-black text-sm md:text-[15px] leading-relaxed max-w-[680px]">
-              The SNAP deburring tool by HEULE Werkzeug AG is designed for precise front and back chamfering of drilled holes in a single continuous operation. 
-              What makes SNAP unique is its interchangeable blade system, which allows different chamfer sizes to be achieved for various bore diameters while maintaining consistent and accurate edge quality. 
-              The tool operates efficiently without the need for manual repositioning, reducing machining time and improving productivity in CNC applications. Its compact design and cylindrical shank provide stable and reliable performance, making SNAP an ideal solution for high-precision chamfering operations where flexibility, repeatability, and process efficiency are essential.
+              The Vex drilling combine by HEULE Werkzeug AG is designed for efficient and reliable front and back drilling in automated machining applications, using internal coolant activation for precise and consistent operation. What makes the BSF system versatile is its availability in multiple configurations, including BSF Air for pneumatic activation and BSF Manual for manual applications, allowing the tool to adapt to different production requirements. Supplied as a standard unit without a blade, the blade must be ordered separately to match the specific material and application. The standard “1A” blade coating is optimized for steel alloys, while alternative coatings such as “1D” are available for aluminium machining applications. Featuring a cylindrical shank for secure clamping, the tool also offers optional Weldon (“-HB”) and Whistle Notch (“-HE”) shank configurations upon request, providing additional flexibility for demanding machining environments.
             </p>
           </div>
         </section>

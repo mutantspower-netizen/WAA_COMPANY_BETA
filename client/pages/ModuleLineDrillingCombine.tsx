@@ -61,9 +61,7 @@ export default function Dl2Deburring() {
              Module Line Drilling Combine
             </h1>
             <p className="font-sarabun text-black text-sm md:text-[15px] leading-relaxed max-w-[680px]">
-              The SNAP deburring tool by HEULE Werkzeug AG is designed for precise front and back chamfering of drilled holes in a single continuous operation. 
-              What makes SNAP unique is its interchangeable blade system, which allows different chamfer sizes to be achieved for various bore diameters while maintaining consistent and accurate edge quality. 
-              The tool operates efficiently without the need for manual repositioning, reducing machining time and improving productivity in CNC applications. Its compact design and cylindrical shank provide stable and reliable performance, making SNAP an ideal solution for high-precision chamfering operations where flexibility, repeatability, and process efficiency are essential.
+              The SNAP18 module by HEULE Werkzeug AG is a precision chamfering solution designed for automated front and back chamfering of bores in a single continuous operation. Specifically developed for bore diameters ranging from 18.0 mm to 50.0 mm, the SNAP18 module delivers accurate and consistent edge finishing while reducing machining time and eliminating the need for secondary operations. What makes the SNAP18 system unique is its ability to perform reliable chamfering in automated machining environments with high precision and repeatability. Engineered for demanding CNC applications, the module provides efficient and stable performance, making it ideal for high-volume production processes where productivity, flexibility, and consistent chamfer quality are essential.
             </p>
           </div>
         </section>
