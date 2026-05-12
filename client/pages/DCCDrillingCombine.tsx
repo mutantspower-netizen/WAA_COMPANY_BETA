@@ -58,12 +58,12 @@ export default function Dl2Deburring() {
           />
           <div className="relative z-10 flex flex-col items-center text-center px-6 py-16 max-w-[860px] mx-auto">
             <h1 className="font-sarabun text-[#A32A19] text-3xl md:text-4xl lg:text-5xl font-semibold mb-4">
-             SNAP Chamfering
+             DCC DrillingCombine
             </h1>
             <p className="font-sarabun text-black text-sm md:text-[15px] leading-relaxed max-w-[680px]">
-              The SNAP deburring tool by HEULE Werkzeug AG is designed for precise front and back chamfering of drilled holes in a single continuous operation. 
-              What makes SNAP unique is its interchangeable blade system, which allows different chamfer sizes to be achieved for various bore diameters while maintaining consistent and accurate edge quality. 
-              The tool operates efficiently without the need for manual repositioning, reducing machining time and improving productivity in CNC applications. Its compact design and cylindrical shank provide stable and reliable performance, making SNAP an ideal solution for high-precision chamfering operations where flexibility, repeatability, and process efficiency are essential.
+              The DCC drilling combine by HEULE Werkzeug AG is designed for efficient drilling and deburring operations in a single continuous process. 
+              What makes the DCC unique is its integrated approach, which combines drilling and deburring in one setup, reducing cycle time and improving overall productivity. 
+              The tool operates efficiently without the need for manual repositioning, reducing machining time and improving productivity in CNC applications. Its compact design and cylindrical shank provide stable and reliable performance, making the DCC an ideal solution for high-volume machining environments where precision and efficiency are critical.
             </p>
           </div>
         </section>

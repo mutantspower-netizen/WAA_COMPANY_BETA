@@ -75,7 +75,7 @@ export default function HeuleChamfering() {
               <p className="font-sarabun text-[14px] text-[#1e1e1e] leading-snug max-w-[320px]">
                 Forwards and backwards chamfering of interrupted bores – even with large burrs – in one single pass
               </p>
-              <SpecButton to="/heule/snap-chamfering" />
+              <SpecButton to="/heule/defa-chamfering" />
             </div>
             <div className="flex-1 flex items-center justify-center">
               <img
@@ -100,7 +100,7 @@ export default function HeuleChamfering() {
               <p className="font-sarabun text-[14px] text-[#1e1e1e] leading-snug max-w-[320px]">
                 Countersinking of metal from Ø3 mm to Ø45 mm
               </p>
-              <SpecButton to="" />
+              <SpecButton to="/heule/ghk-chamfering" />
             </div>
           </div>
 

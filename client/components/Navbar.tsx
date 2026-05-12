@@ -10,9 +10,27 @@ const NAV_LINKS = [
         { label: "DL2", to: "/heule/dl2-deburring" },
       ],
        },
-      { label: "CHAMFERING", to: "/heule/chamfering" },
-      { label: "COUNTERBORING", to: "/heule/counterboring" },
-      { label: "DRILLINGCOMBINE", to: "/heule/drilling-combine" },
+      { label: "CHAMFERING", to: "/heule/chamfering" ,
+        dropdown: [
+        { label: "SNAP", to: "/heule/snap-chamfering" },
+        { label: "DEFA", to: "/heule/defa-chamfering" }, 
+        { label: "GH-K", to: "/heule/ghk-chamfering" },
+        ],
+      },
+        
+      { label: "COUNTERBORING", to: "/heule/counterboring", 
+         dropdown: [
+        { label: "BSF", to: "/heule/bsf-counterboring" },
+        { label: "SOLO", to: "/heule/solo-counterboring" }, 
+        ],
+      },
+      { label: "DRILLINGCOMBINE", to: "/heule/drilling-combine" ,
+         dropdown: [
+        { label: "VEX", to: "/heule/vex-drilling-combine" },
+        { label: "DCC", to: "/heule/dcc-drilling-combine" }, 
+        { label: "MODULE LINE", to: "/heule/module-line-drilling-combine" },
+        ],
+      },
     ]
   },
   
