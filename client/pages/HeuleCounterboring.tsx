@@ -1,18 +1,21 @@
 import HeuleNavbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import { Link } from "react-router-dom";
 import bsfImage from "./img/BSF_no_bg.png";
 import soloImage from "./img/SOLO_no_bg.png";
 
-function SpecButton() {
+function SpecButton({ to }: { to: string }) {
   return (
-    <button className="inline-flex items-center gap-2 bg-[#B30B0F] text-white font-sarabun text-sm font-semibold px-4 py-1.5 rounded-full hover:bg-[#950a0d] transition-colors max-w-[145px]">
+    
+    <Link to={to} 
+    className="inline-flex items-center gap-2 bg-[#B30B0F] text-white font-sarabun text-sm font-semibold px-4 py-1.5 rounded-full hover:bg-[#950a0d] transition-colors max-w-[145px]">
       Specification
       <span className="flex items-center justify-center bg-white rounded-full w-5 h-5 flex-shrink-0">
         <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M2 5h6M5.5 2.5L8 5l-2.5 2.5" stroke="#B30B0F" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
         </svg>
       </span>
-    </button>
+    </Link>
   );
 }
 
@@ -62,7 +65,7 @@ export default function HeuleCounterboring() {
               <p className="font-sarabun text-[14px] text-[#1e1e1e] leading-snug max-w-[320px]">
                 Backspotfacing up to 2.3 x the bore diameter
               </p>
-              <SpecButton />
+              <SpecButton to="/heule/bsf-counterboring" />
             </div>
           </div>
 
@@ -79,7 +82,7 @@ export default function HeuleCounterboring() {
                 backspotfacing in one single pass.
                 Interrupted cutting possible
               </p>
-              <SpecButton />
+              <SpecButton to="/heule/solo-counterboring" />
             </div>
 
             {/* Three SOLO tool images — right */}
