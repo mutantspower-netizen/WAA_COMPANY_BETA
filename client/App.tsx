@@ -20,6 +20,7 @@ import HeuleDrillingCombine from "./pages/HeuleDrillingCombine";
 import HeuleChamfering from "./pages/HeuleChamfering";
 import CofaDeburring from "./pages/CofaDeburring";
 import Dl2Deburring from "./pages/Dl2Deburring";
+import SNAPChamfering from "./pages/SNAPChamFering";
 import Placeholder from "./pages/Placeholder";
 import NotFound from "./pages/NotFound";
 
@@ -46,6 +47,7 @@ const App = () => (
           <Route path="/heule/chamfering" element={<HeuleChamfering />} />
           <Route path="/heule/cofa-deburring" element={<CofaDeburring />} />
           <Route path="/heule/dl2-deburring" element={<Dl2Deburring />} />
+          <Route path="/heule/snap-chamfering" element={<SNAPChamfering />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
