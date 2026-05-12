@@ -1,4 +1,4 @@
-import HeuleNavbar from "@/components/HeuleNavbar";
+import HeuleNavbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import bsfImage from "./img/BSF_no_bg.png";
 import soloImage from "./img/SOLO_no_bg.png";

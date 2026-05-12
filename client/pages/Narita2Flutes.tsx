@@ -1,4 +1,4 @@
-import NaritaNavbar from "@/components/NaritaNavbar";
+import NaritaNavbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
 const standardRows = [

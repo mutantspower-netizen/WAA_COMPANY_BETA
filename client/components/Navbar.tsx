@@ -2,8 +2,27 @@ import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 
 const NAV_LINKS = [
-  { label: "W.A.A X HEULE", to: "/heule" },
-  { label: "W.A.A X NARITA", to: "/nrita" },
+  { label: "W.A.A X HEULE", to: "/heule", 
+    dropdown: [
+      { label: "DEBURRING", to: "/heule/deburring",
+         dropdown: [
+        { label: "COFA", to: "/heule/cofa-deburring" },
+        { label: "DL2", to: "/heule/dl2-deburring" },
+      ],
+       },
+      { label: "CHAMFERING", to: "/heule/chamfering" },
+      { label: "COUNTERBORING", to: "/heule/counterboring" },
+      { label: "DRILLINGCOMBINE", to: "/heule/drilling-combine" },
+    ]
+  },
+  
+  { label: "W.A.A X NARITA", to: "/nrita", 
+      dropdown: [
+      { label: "BALL NOSE 2 FLUTE", to: "/nrita/ball-nose" },
+      { label: "2 FLUTES END MILL", to: "/nrita/2-flutes" },
+      { label: "BALL NOSE 4 FLUTE", to: "/nrita/4-flutes" },
+    ],
+  },
   { label: "ABOUT US", to: "/about" },
   { label: "CONTACT", to: "/contact" },
 ];
@@ -28,19 +47,60 @@ export default function Navbar() {
 
         <nav className="hidden md:flex items-center gap-2">
           {NAV_LINKS.map((link) => (
-            <Link
-              key={link.to}
-              to={link.to}
-              className={`px-3 py-2 font-sarabun text-[18px] font-extrabold text-[#fff3f3] hover:text-white transition-colors whitespace-nowrap ${
-                location.pathname === link.to ? "text-white" : ""
-              }`}
-            >
-              {link.label}
-            </Link>
-          ))}
-          <button className="px-3 py-2 font-sarabun text-[18px] font-extrabold text-[#fff3f3] hover:text-white transition-colors">
-            EN/TH
-          </button>
+  <div className="relative group" key={link.label}>
+    
+    <Link
+      to={link.to || "#"}
+      className={`px-3 py-2 block font-sarabun text-[18px] font-extrabold text-[#fff3f3] hover:text-white transition-colors whitespace-nowrap ${
+        location.pathname === link.to ? "text-white" : ""
+      }`}
+    >
+      {link.label}
+    </Link>
+
+   {link.dropdown && (
+  <div className="absolute hidden group-hover:block bg-[#2a2a2a] min-w-[220px] shadow-lg z-50">
+    
+    {link.dropdown.map((item) => (
+      <div className="relative group/sub" key={item.label}>
+        
+        {item.to ? (
+          <Link
+            to={item.to}
+            className="block px-4 py-2 text-white hover:bg-[#3a3a3a]"
+          >
+            {item.label}
+          </Link>
+        ) : (
+          <div className="block px-4 py-2 text-white hover:bg-[#3a3a3a] cursor-pointer">
+            {item.label}
+          </div>
+        )}
+
+        {item.dropdown && (
+          <div className="absolute top-0 left-full hidden group-hover/sub:block bg-[#2a2a2a] min-w-[200px] shadow-lg">
+            
+            {item.dropdown.map((subItem) => (
+              <Link
+                key={subItem.to}
+                to={subItem.to}
+                className="block px-4 py-2 text-white hover:bg-[#3a3a3a]"
+              >
+                {subItem.label}
+              </Link>
+            ))}
+
+          </div>
+        )}
+
+      </div>
+    ))}
+
+  </div>
+)}
+
+  </div>
+))}
         </nav>
 
         <button
@@ -69,14 +129,18 @@ export default function Navbar() {
               className="block py-3 font-sarabun text-[18px] font-extrabold text-[#fff3f3] hover:text-white transition-colors border-b border-white/10 last:border-0"
               onClick={() => setMenuOpen(false)}
             >
+              
               {link.label}
+              
             </Link>
+            
           ))}
           <button className="block w-full text-left py-3 font-sarabun text-[18px] font-extrabold text-[#fff3f3] hover:text-white transition-colors">
             EN/TH
           </button>
         </div>
       )}
+        
     </header>
   );
 }

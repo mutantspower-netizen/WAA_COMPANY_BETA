@@ -1,4 +1,4 @@
-import HeuleNavbar from "@/components/HeuleNavbar";
+import HeuleNavbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
 const rangeRows = [
