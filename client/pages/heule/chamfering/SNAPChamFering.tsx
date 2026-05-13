@@ -114,10 +114,12 @@ export default function Dl2Deburring() {
                   OPERATING PRINCIPLE
                 </h2>
                 <p className="font-sarabun text-black text-sm md:text-[15px] leading-relaxed">
-                  Due to its size, the DL2 blade performs the function of the spring and the blade simultaneously. Due to the
-                  rigid alignment of the blade, the operating principle is different from that of other HEULE tool systems. The
-                  blade has been designed in such a way that it can be used in confined spaces without compromising on
-                  functionality.
+                  The SNAP chamfering blade is kept mov able by a spring-loaded control bolt in the tool body. 
+                  The specially ground SNAP blade, which cuts forwards and back wards or backward cutting only, 
+                  produc es the desired chamfer in the working feed.
+                  Upon reaching the defined chamfer size, the blade retracts into the tool body. The chamfer size 
+                  and angle are geometrically defined by the blade and can only be changed by using 
+                  a different SNAP blade.
                 </p>
               </div>
 
@@ -130,16 +132,15 @@ export default function Dl2Deburring() {
                 />
               </div>
 
-              {/* Right: Controlled Deburring */}
+              {/* Right: Compensation Of Height Differences */}
               <div className="flex flex-col justify-center">
                 <h2 className="font-sarabun text-[#A32A19] text-xl md:text-2xl font-semibold mb-3">
-                  CONTROLLED DEBURRING
+                  Compensation Of Height Differences
                 </h2>
                 <p className="font-sarabun text-black text-sm md:text-[15px] leading-relaxed">
-                  The blade produces the desired debur in working feed. Upon completion of deburring, the blade automatically
-                  retracts into the blade housing without external activation. The specially designed sliding section of the blade
-                  prevents the bores from being damaged. The spring coated blade automatically returns to its neutral position
-                  when it re-fits the bore.
+                  SNAP automatically compensates for possible height differences in the com ponents to be machined, 
+                  e.g. cast parts. The blade only begins to retract or cut on contact with the workpiece. 
+                  This means that the chamfer size remains constant.
                 </p>
               </div>
             </div>
@@ -158,17 +159,18 @@ export default function Dl2Deburring() {
               TOOL DESIGN
             </h2>
             <p className="font-sarabun text-black text-sm md:text-[15px] leading-relaxed max-w-[760px] mx-auto">
-              The DL2 tool has a very simple and robust design, comprising only four components in its entire construction.
-              The advantages of the design become obvious when changing the blade. Despite the extremely delicate dimensions of
-              the cutting edge, the blade is easy to replace without tweezers or a magnifying glass. The tool body and blade
-              housing form the heart of this mini tool. The coolant sleeve guides the coolant into the blade window and ensures
-              that the cutting edge is flushed at all times. The smaller the tool, the more important cooling is for reliable
-              operation and a long blade life.
+              SNAP is HEULE's answer to the demand for ever simpler and more flexible manu
+               facturing solutions. The SNAP tool family is made up of 3 groups of tools. 
+               These are SNAP2, 3 and 4, SNAP5 to 20 and the cassette tools. 
+               The tool body for SNAP2 to 4 consists of a tool body and blade housing, 
+               while the tool body for SNAP5 to 20 is designed as one piece. 
+               The cassette tools have the same operating principle as SNAP5 to 20, 
+               but in a compact design, making it ideal for installation in a tool holder.
             </p>
           </div>
         </section>
 
-        {/* ── DL2 PROCESS STEPS ────────────────────────────────────────── */}
+        {/* ── SNAP PROCESS STEPS ────────────────────────────────────────── */}
         <section className="relative py-12 md:py-16">
           <img
             src="https://api.builder.io/api/v1/image/assets/TEMP/59460b3436a961710e2a5960760b4a43317ac5d9?width=2896"

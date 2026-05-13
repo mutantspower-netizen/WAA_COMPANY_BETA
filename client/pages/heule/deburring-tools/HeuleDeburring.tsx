@@ -1,7 +1,7 @@
 import HeuleNavbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Link } from "react-router-dom";
-import cofaImage from "./img/1248-COFA_Sortiment_shade_7680x4320.png";
+import cofaImage from "../../img/1248-COFA_Sortiment_shade_7680x4320.png";
 
 function SpecButton({ to }: { to: string }) {
   return (

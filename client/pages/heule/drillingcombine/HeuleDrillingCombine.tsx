@@ -1,9 +1,9 @@
 import HeuleNavbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Link } from "react-router-dom";
-import snapImage from "./img/snap_no_bg.png";
-import defaImage from "./img/DEFA_vno_bg.png";
-import ghkImage from "./img/gh-k_no_bg.png";
+import vexImage from "../../img/VEX.png";
+import dccImage from "../../img/DCC.png";
+import moduleLineImage from "../../img/Module_Line.png";
 
 function SpecButton({ to }: { to: string }) {
   return (
@@ -21,7 +21,7 @@ function SpecButton({ to }: { to: string }) {
   );
 }
 
-export default function HeuleChamfering() {
+export default function HeuleDrillingCombine() {
   return (
     <div className="min-h-screen bg-[#f5f5f5] font-sarabun flex flex-col">
       <HeuleNavbar />
@@ -38,69 +38,65 @@ export default function HeuleChamfering() {
 
           {/* Title */}
           <h1 className="font-sarabun text-[#B30B0F] text-3xl md:text-4xl font-bold text-center mb-6">
-            CHAMFERING
+            DRILLING COMBINE
           </h1>
 
           {/* Description */}
           <p className="font-sarabun text-[13px] text-[#1e1e1e] leading-relaxed text-center max-w-[740px] mx-auto mb-14">
-            Heule chamfering tools are designed to create precise angled edges (chamfers) on holes and components,
-            improving fit, safety, and overall part quality. What sets Heule apart is their ability to produce consistent front
-            and back chamfers in a single pass—without stopping the machine or repositioning the workpiece. This not only
-            removes secondary burrs but also ensures smooth edges, protects surface integrity, and significantly reduces
-            machining time while maintaining high precision.
+            Heule drilling combination tools are designed to perform multiple operations—such as drilling, chamfering, and deburring—in a single pass, reducing the need for multiple tool changes. What sets Heule apart is their ability to streamline complex machining processes without stopping the machine or repositioning the workpiece. This improves efficiency, maintains consistent quality across all features, and significantly reduces cycle time. The result is higher productivity, precise hole quality, and reliable performance in both CNC and manual machining applications.
           </p>
 
-          {/* ── SNAP section — image left, content right ── */}
+          {/* ── VEX section — image left, content right ── */}
           <div className="flex flex-col sm:flex-row items-center gap-8 mb-20">
             <div className="flex-1 flex items-center justify-center">
               <img
-                src={snapImage}
-                alt="SNAP Chamfering Tools"
+                src={vexImage}
+                alt="VEX Drilling Tools"
                 className="w-full max-w-[380px] object-contain"
               />
             </div>
             <div className="flex-1 flex flex-col gap-3">
-              <h2 className="font-sarabun text-[#B30B0F] text-4xl md:text-5xl font-bold">SNAP</h2>
+              <h2 className="font-sarabun text-[#B30B0F] text-4xl md:text-5xl font-bold">VEX</h2>
               <p className="font-sarabun text-[14px] text-[#1e1e1e] leading-snug max-w-[320px]">
-                Forwards and backwards chamfering in one single pass
+                Drilling combined with chamfering forwards and backwards in one single pass in the diameter range from 5.0 to 17.0 mm
               </p>
-              <SpecButton to="/heule/snap-chamfering" />
+              <SpecButton to="/heule/vex-drilling-combine" />
             </div>
           </div>
 
-          {/* ── DEFA section — content left (right-aligned), image right ── */}
+          {/* ── DCC section — content left, image right ── */}
           <div className="flex flex-col sm:flex-row items-center gap-8 mb-20">
             <div className="flex-1 flex flex-col gap-3 items-end text-right">
-              <h2 className="font-sarabun text-[#B30B0F] text-4xl md:text-5xl font-bold">DEFA</h2>
+              <h2 className="font-sarabun text-[#B30B0F] text-4xl md:text-5xl font-bold">DCC</h2>
               <p className="font-sarabun text-[14px] text-[#1e1e1e] leading-snug max-w-[320px]">
-                Forwards and backwards chamfering of interrupted bores – even with large burrs – in one single pass
+                Solid carbide drilling combined with forward and backward chamfering in a single pass in the diameter range from 4.0 to 10.0 mm
               </p>
-              <SpecButton to="/heule/defa-chamfering" />
+              <SpecButton to="/heule/dcc-drilling-combine" />
             </div>
             <div className="flex-1 flex items-center justify-center">
               <img
-                src={defaImage}
-                alt="DEFA Chamfering Tools"
+                src={dccImage}
+                alt="DCC Drilling Tools"
                 className="w-full max-w-[380px] object-contain"
               />
             </div>
           </div>
 
-          {/* ── GH-K section — image left, content right ── */}
+          {/* ── MODULE LINE section — image left, content right ── */}
           <div className="flex flex-col sm:flex-row items-center gap-8">
             <div className="flex-1 flex items-center justify-center">
               <img
-                src={ghkImage}
-                alt="GH-K Chamfering Tools"
+                src={moduleLineImage}
+                alt="Module Line Drilling Tools"
                 className="w-full max-w-[380px] object-contain"
               />
             </div>
             <div className="flex-1 flex flex-col gap-3">
-              <h2 className="font-sarabun text-[#B30B0F] text-4xl md:text-5xl font-bold">GH - K</h2>
+              <h2 className="font-sarabun text-[#B30B0F] text-4xl md:text-5xl font-bold">MODULE LINE</h2>
               <p className="font-sarabun text-[14px] text-[#1e1e1e] leading-snug max-w-[320px]">
-                Countersinking of metal from Ø3 mm to Ø45 mm
+                Your drill body combined with our chamfering module for simultaneous machining from bore-Ø 18.0 mm
               </p>
-              <SpecButton to="/heule/ghk-chamfering" />
+              <SpecButton to="/heule/module-line-drilling-combine" />
             </div>
           </div>
 

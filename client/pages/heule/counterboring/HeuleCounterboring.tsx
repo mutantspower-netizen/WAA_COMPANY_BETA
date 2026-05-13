@@ -1,8 +1,8 @@
 import HeuleNavbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Link } from "react-router-dom";
-import bsfImage from "./img/BSF_no_bg.png";
-import soloImage from "./img/SOLO_no_bg.png";
+import bsfImage from "../../img/BSF_no_bg.png";
+import soloImage from "../../img/SOLO_no_bg.png";
 
 function SpecButton({ to }: { to: string }) {
   return (

@@ -1,6 +1,6 @@
 import HeuleNavbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import bsfImage from "./img/BSF_no_bg.png";
+import bsfImage from "../../img/BSF_no_bg.png";
 
 export default function BSFCounterboring() {
   return (

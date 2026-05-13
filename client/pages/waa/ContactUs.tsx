@@ -90,8 +90,7 @@ export default function ContactUs() {
             {/* Right: Map */}
             <div className="lg:w-[380px] flex items-start justify-center lg:justify-end mt-4 lg:mt-16">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3878.830275634726!2d100.58747!3d13.747119!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x311d2181c6e3e3e3%3A0x123456789!2sWAA%20CO.%2C%20LTD!5e0!3m2!1sen!2sth!4v1234567890"
-                width="100%"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3875.089705882287!2d100.6276625109688!3d13.773463596735189!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x311d61f82e662df1%3A0xcdc5a4279d8f3769!2sW.A.A.%20Co.%2CLtd.!5e0!3m2!1sen!2sth!4v1778688701702!5m2!1sen!2sth"
                 height="400"
                 style={{ border: '8px solid #F91111', borderRadius: '40px' }}
                 allowFullScreen

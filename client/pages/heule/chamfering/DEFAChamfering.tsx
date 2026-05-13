@@ -114,10 +114,10 @@ export default function Dl2Deburring() {
                   OPERATING PRINCIPLE
                 </h2>
                 <p className="font-sarabun text-black text-sm md:text-[15px] leading-relaxed">
-                  Due to its size, the DL2 blade performs the function of the spring and the blade simultaneously. Due to the
-                  rigid alignment of the blade, the operating principle is different from that of other HEULE tool systems. The
-                  blade has been designed in such a way that it can be used in confined spaces without compromising on
-                  functionality.
+                 The DEFA chamfering tool is particularly  suitable for cutting small to large cham fers 
+                 to materials with high burr formation.The rigid connection between the two  cutting edges 
+                 also allows bores with axial   grooves or cross bores to be machined  and to be traversed 
+                 through in rotation,  i.e. without stopping the spindle
                 </p>
               </div>
 
@@ -133,13 +133,12 @@ export default function Dl2Deburring() {
               {/* Right: Controlled Deburring */}
               <div className="flex flex-col justify-center">
                 <h2 className="font-sarabun text-[#A32A19] text-xl md:text-2xl font-semibold mb-3">
-                  CONTROLLED DEBURRING
+                 Compensation Of Height Differences
                 </h2>
                 <p className="font-sarabun text-black text-sm md:text-[15px] leading-relaxed">
-                  The blade produces the desired debur in working feed. Upon completion of deburring, the blade automatically
-                  retracts into the blade housing without external activation. The specially designed sliding section of the blade
-                  prevents the bores from being damaged. The spring coated blade automatically returns to its neutral position
-                  when it re-fits the bore.
+                 DEFA automatically compensates for  possible height differences in the com ponents to be machined, e.g. cast parts.  
+                 The blade only begins to retract or cut on  contact with the workpiece. 
+                 This means  that the chamfer size remains constant.
                 </p>
               </div>
             </div>
@@ -158,17 +157,15 @@ export default function Dl2Deburring() {
               TOOL DESIGN
             </h2>
             <p className="font-sarabun text-black text-sm md:text-[15px] leading-relaxed max-w-[760px] mx-auto">
-              The DL2 tool has a very simple and robust design, comprising only four components in its entire construction.
-              The advantages of the design become obvious when changing the blade. Despite the extremely delicate dimensions of
-              the cutting edge, the blade is easy to replace without tweezers or a magnifying glass. The tool body and blade
-              housing form the heart of this mini tool. The coolant sleeve guides the coolant into the blade window and ensures
-              that the cutting edge is flushed at all times. The smaller the tool, the more important cooling is for reliable
-              operation and a long blade life.
+              The DEFA chamfering tool is character ised by two blades with a special cutting  geometry. 
+              The two blades are kept by a  spring-loaded blade control in the tool  body. 
+              The two blades are rigidly connected. By  turning the adjusting screw, the blade  position and thus the chamfer diameter  
+              is simultaneously and continuously ad justed.
             </p>
           </div>
         </section>
 
-        {/* ── DL2 PROCESS STEPS ────────────────────────────────────────── */}
+        {/* ── DEFA PROCESS STEPS ────────────────────────────────────────── */}
         <section className="relative py-12 md:py-16">
           <img
             src="https://api.builder.io/api/v1/image/assets/TEMP/59460b3436a961710e2a5960760b4a43317ac5d9?width=2896"
@@ -177,7 +174,7 @@ export default function Dl2Deburring() {
           />
           <div className="relative max-w-[1100px] mx-auto px-6">
             <h2 className="font-sarabun text-[#A32A19] text-xl md:text-2xl font-semibold text-center mb-8">
-              DL2 PROCESS STEPS
+              DEFA PROCESS STEPS
             </h2>
             <div className="grid grid-cols-2 sm:grid-cols-3 gap-6 md:gap-8">
               {processSteps.map((step, i) => (

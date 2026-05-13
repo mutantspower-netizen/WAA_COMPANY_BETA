@@ -172,7 +172,7 @@ export default function NaritaBallNose() {
               <img
                 src="https://api.builder.io/api/v1/image/assets/TEMP/30d7875b1c393e6c980a64a2ba4ea56f5a4452dd?width=274"
                 alt="Ball Nose 2 Flute End Mill"
-                className="h-52 md:h-64 w-auto object-contain max-w-[200px]"
+                className="h-52 md:h-64 w-auto object-contain max-w-[200px] scale-x-[-1]"
               />
             </div>
           </div>
