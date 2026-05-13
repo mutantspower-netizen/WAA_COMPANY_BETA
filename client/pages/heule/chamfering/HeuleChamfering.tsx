@@ -56,7 +56,7 @@ export default function HeuleChamfering() {
               <img
                 src={snapImage}
                 alt="SNAP Chamfering Tools"
-                className="w-full max-w-[380px] object-contain"
+                className="w-full max-w-[500px] object-contain"
               />
             </div>
             <div className="flex-1 flex flex-col gap-3">

@@ -179,7 +179,7 @@ export default function Dl2Deburring() {
           />
           <div className="relative max-w-[1100px] mx-auto px-6">
             <h2 className="font-sarabun text-[#A32A19] text-xl md:text-2xl font-semibold text-center mb-8">
-              DL2 PROCESS STEPS
+              SNAP PROCESS STEPS
             </h2>
             <div className="grid grid-cols-2 sm:grid-cols-3 gap-6 md:gap-8">
               {processSteps.map((step, i) => (
