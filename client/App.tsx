@@ -30,6 +30,7 @@ import DCCDrillingCombine from "./pages/heule/drillingcombine/DCCDrillingCombine
 import ModuleLineDrillingCombine from "./pages/heule/drillingcombine/ModuleLineDrillingCombine";
 import Placeholder from "./pages/Placeholder";
 import NotFound from "./pages/NotFound";
+import { i } from "node_modules/vite/dist/node/chunks/moduleRunnerTransport";
 
 const queryClient = new QueryClient();
 

@@ -93,7 +93,7 @@ export default function AboutUs() {
               <img
                 src="https://api.builder.io/api/v1/image/assets/TEMP/7218d601aa64d1a64b1e614dde32c2311a488147?width=702"
                 alt="WAA Company Building"
-                className="w-full max-w-[350px] rounded-[40px] border-[8px] border-[#F91111] object-cover"
+                className="w-full max-w-[350px] rounded-[40px]  border-[#F91111] object-cover"
                 style={{ aspectRatio: "117/118" }}
               />
             </div>
