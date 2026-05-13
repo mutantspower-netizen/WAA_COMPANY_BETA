@@ -52,16 +52,38 @@ export default function Navbar() {
   return (
     <header className="w-full bg-[#1e1e1e] fixed top-0 left-0 z-50">
       <div className="max-w-[1440px] mx-auto px-6 h-[60px] flex items-center justify-between">
-        <Link to="/" className="flex flex-col items-start gap-0.5 shrink-0">
-          <img
-            src="https://api.builder.io/api/v1/image/assets/TEMP/bb958302d07eb46aee9e4025e421a463cb786f01?width=133"
-            alt="WAA Logo"
-            className="h-7 w-auto"
-          />
-          <span className="text-white font-inter text-[9px] font-normal leading-none">
-            WAA.CO.LTD
-          </span>
-        </Link>
+        <Link to="/" className="flex items-center gap-4 shrink-0">
+
+  <div className="flex flex-col items-start gap-0.5">
+    <img
+      src="https://api.builder.io/api/v1/image/assets/TEMP/bb958302d07eb46aee9e4025e421a463cb786f01?width=133"
+      alt="WAA Logo"
+      className="h-7 w-auto"
+    />
+
+    <span className="text-white font-inter text-[9px] font-normal leading-none">
+      WAA.CO.LTD
+    </span>
+  </div>
+
+  {location.pathname.startsWith("/heule") && (
+    <img
+      src="https://cdn.builder.io/api/v1/image/assets%2F2f0b492e34a14ec29346019ef2a7eaa9%2F4ab1ea9089ae4a39adad0a77c00e7844?format=webp&width=800&height=1200"
+      alt="Heule Precision Tools"
+      className="h-8 w-auto"
+      style={{ maxWidth: "500px", minHeight: "40px" }}
+    />
+  )}
+
+  {location.pathname.startsWith("/nrita") && (
+    <img
+      src="https://api.builder.io/api/v1/image/assets/TEMP/19f8b09e554ec6d01e98fb980fc860612632e4f1?width=300"
+      alt="Narita End Mills"
+      className="h-25 w-100 translate-y-5 object-contain ml-[-40px]"
+    />
+  )}
+
+</Link>
 
         <nav className="hidden md:flex items-center gap-2">
           {NAV_LINKS.map((link) => (
