@@ -152,9 +152,9 @@ export default function Dl2Deburring() {
         {/* ── TOOL DESIGN ──────────────────────────────────────────────── */}
         <section className="relative py-12 md:py-16">
           <img
-            src="https://api.builder.io/api/v1/image/assets/TEMP/091c1556916c9587f51a28f59014d90ac185e978?width=2896"
+            src="/DL2/DL2 tool dia.png"
             alt=""
-            className="absolute inset-0 w-full h-full object-cover select-none pointer-events-none opacity-25"
+            className="w-full max-w-[460px] object-contain mx-auto "
           />
           <div className="relative max-w-[900px] mx-auto px-6 text-center">
             <h2 className="font-sarabun text-[#A32A19] text-xl md:text-2xl font-semibold mb-4">
@@ -174,7 +174,7 @@ export default function Dl2Deburring() {
         {/* ── DL2 PROCESS STEPS ────────────────────────────────────────── */}
         <section className="relative py-12 md:py-16">
           <img
-            src="https://api.builder.io/api/v1/image/assets/TEMP/59460b3436a961710e2a5960760b4a43317ac5d9?width=2896"
+            src="./DL2/DL2 process steps.png"
             alt=""
             className="absolute inset-0 w-full h-full object-cover select-none pointer-events-none opacity-25"
           />
@@ -182,17 +182,33 @@ export default function Dl2Deburring() {
             <h2 className="font-sarabun text-[#A32A19] text-xl md:text-2xl font-semibold text-center mb-8">
               DL2 PROCESS STEPS
             </h2>
-            <div className="grid grid-cols-2 sm:grid-cols-3 gap-6 md:gap-8">
-              {processSteps.map((step, i) => (
-                <div key={i} className="flex flex-col items-center gap-3">
-                  <div className="w-full aspect-square max-w-[180px] bg-white/60 border border-[#B8B8B8] rounded flex items-center justify-center">
-                    <span className="text-[#A32A19] font-semibold text-2xl">{i + 1}</span>
-                  </div>
-                  <p className="font-sarabun text-black text-xs md:text-sm leading-snug text-center whitespace-pre-line">
+            
+             <img
+              src="\DL2\DL2 process dia 1.png"
+              alt="DL2 Process Steps Diagram 1"
+              className="w-full max-w-[900px] mx-auto object-contain mb-2"
+            />
+            <div className="grid grid-cols-3 gap-2 mb-8">
+              {processSteps.slice(0, 3).map((step, i) => (
+                <p key={i} className="font-sarabun text-black text-xs md:text-sm leading-snug whitespace-pre-line text-center">
+                  {step.label}
+                </p>
+              ))}
+            </div>
+
+            <div className="max-w-[650px] mx-auto">
+              <img
+                src="/DL2/DL@ PROCESS DIA 2.png"
+                alt="DL2 Process Steps Diagram 2"
+                className="w-full object-contain mb-2"
+              />
+              <div className="grid grid-cols-2 gap-2">
+                {processSteps.slice(3).map((step, i) => (
+                  <p key={i} className="font-sarabun text-black text-xs md:text-sm leading-snug text-center">
                     {step.label}
                   </p>
-                </div>
-              ))}
+                ))}
+              </div>
             </div>
           </div>
         </section>
@@ -212,7 +228,7 @@ export default function Dl2Deburring() {
               {/* Tool image */}
               <div className="flex-shrink-0 flex items-center justify-center w-full md:w-auto">
                 <img
-                  src="https://cdn.builder.io/api/v1/image/assets%2F2f0b492e34a14ec29346019ef2a7eaa9%2Febeb565a9831444db25117ed98f1ba4a?format=webp&width=800&height=1200"
+                  src="\DL2\DL2 programming dia.png"
                   alt="DL2 Dimension Diagram"
                   className="w-full max-w-[220px] object-contain"
                 />

@@ -52,7 +52,8 @@ export default function Navbar() {
   return (
     <header className="w-full bg-[#1e1e1e] fixed top-0 left-0 z-50">
       <div className="max-w-[1440px] mx-auto px-6 h-[60px] flex items-center justify-between">
-        <Link to="/" className="flex items-center gap-4 shrink-0">
+        <div className="flex items-center gap-3 shrink-0">
+        <Link to="/" className="flex items-center gap-4">
 
   <div className="flex flex-col items-start gap-0.5">
     <img
@@ -65,7 +66,8 @@ export default function Navbar() {
       WAA.CO.LTD
     </span>
   </div>
-
+  </Link>
+  <Link to="/heule" >
   {location.pathname.startsWith("/heule") && (
     <img
       src="https://cdn.builder.io/api/v1/image/assets%2F2f0b492e34a14ec29346019ef2a7eaa9%2F4ab1ea9089ae4a39adad0a77c00e7844?format=webp&width=800&height=1200"
@@ -74,7 +76,8 @@ export default function Navbar() {
       style={{ maxWidth: "500px", minHeight: "40px" }}
     />
   )}
-
+</Link>
+<Link to="/nrita" >
   {location.pathname.startsWith("/nrita") && (
     <img
       src="https://api.builder.io/api/v1/image/assets/TEMP/19f8b09e554ec6d01e98fb980fc860612632e4f1?width=300"
@@ -84,6 +87,7 @@ export default function Navbar() {
   )}
 
 </Link>
+</div>
 
         <nav className="hidden md:flex items-center gap-2">
           {NAV_LINKS.map((link) => (
