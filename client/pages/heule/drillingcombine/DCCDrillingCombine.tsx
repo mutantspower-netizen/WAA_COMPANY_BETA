@@ -58,7 +58,7 @@ export default function Dl2Deburring() {
           />
           <div className="relative z-10 flex flex-col items-center text-center px-6 py-16 max-w-[860px] mx-auto">
             <h1 className="font-sarabun text-[#A32A19] text-3xl md:text-4xl lg:text-5xl font-semibold mb-4">
-             DCC DrillingCombine
+             DCC DRILLINGCOMBINE
             </h1>
             <p className="font-sarabun text-black text-sm md:text-[15px] leading-relaxed max-w-[680px]">
               The DCC drilling combine by HEULE Werkzeug AG is designed for efficient drilling and deburring operations in a single continuous process. 

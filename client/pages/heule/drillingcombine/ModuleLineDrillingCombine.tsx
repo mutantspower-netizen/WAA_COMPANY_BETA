@@ -58,7 +58,7 @@ export default function Dl2Deburring() {
           />
           <div className="relative z-10 flex flex-col items-center text-center px-6 py-16 max-w-[860px] mx-auto">
             <h1 className="font-sarabun text-[#A32A19] text-3xl md:text-4xl lg:text-5xl font-semibold mb-4">
-             Module Line Drilling Combine
+             MODULELINE DRILLINGCOMBINE
             </h1>
             <p className="font-sarabun text-black text-sm md:text-[15px] leading-relaxed max-w-[680px]">
               The SNAP18 module by HEULE Werkzeug AG is a precision chamfering solution designed for automated front and back chamfering of bores in a single continuous operation. Specifically developed for bore diameters ranging from 18.0 mm to 50.0 mm, the SNAP18 module delivers accurate and consistent edge finishing while reducing machining time and eliminating the need for secondary operations. What makes the SNAP18 system unique is its ability to perform reliable chamfering in automated machining environments with high precision and repeatability. Engineered for demanding CNC applications, the module provides efficient and stable performance, making it ideal for high-volume production processes where productivity, flexibility, and consistent chamfer quality are essential.

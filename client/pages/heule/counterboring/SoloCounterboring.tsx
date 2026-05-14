@@ -58,7 +58,7 @@ export default function Dl2Deburring() {
           />
           <div className="relative z-10 flex flex-col items-center text-center px-6 py-16 max-w-[860px] mx-auto">
             <h1 className="font-sarabun text-[#A32A19] text-3xl md:text-4xl lg:text-5xl font-semibold mb-4">
-             Solo CounterBoring 
+             SOLO COUNTERBORING
             </h1>
             <p className="font-sarabun text-black text-sm md:text-[15px] leading-relaxed max-w-[680px]">
               The SOLO tool by HEULE Werkzeug AG is a high-performance automatic counterboring and spotfacing solution designed for efficient front and back machining of holes in a single continuous operation. What makes SOLO unique is its ability to perform precise counterboring and spotfacing on both sides of a workpiece without repositioning, significantly reducing cycle times and improving machining efficiency. Engineered for use in CNC, transfer, dial, and multi-spindle machines, the tool is optimized for high-volume production environments where reliability, precision, and process consistency are essential. Its robust automatic operating system ensures dependable performance across demanding machining applications, making SOLO an ideal solution for modern manufacturing processes requiring high productivity and accurate finishing.

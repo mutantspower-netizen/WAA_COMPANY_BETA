@@ -58,10 +58,10 @@ export default function Dl2Deburring() {
           />
           <div className="relative z-10 flex flex-col items-center text-center px-6 py-16 max-w-[860px] mx-auto">
             <h1 className="font-sarabun text-[#A32A19] text-3xl md:text-4xl lg:text-5xl font-semibold mb-4">
-             Solo CounterBoring 
+             BSF COUNTERBORING
             </h1>
             <p className="font-sarabun text-black text-sm md:text-[15px] leading-relaxed max-w-[680px]">
-              The SOLO tool by HEULE Werkzeug AG is a high-performance automatic counterboring and spotfacing solution designed for efficient front and back machining of holes in a single continuous operation. What makes SOLO unique is its ability to perform precise counterboring and spotfacing on both sides of a workpiece without repositioning, significantly reducing cycle times and improving machining efficiency. Engineered for use in CNC, transfer, dial, and multi-spindle machines, the tool is optimized for high-volume production environments where reliability, precision, and process consistency are essential. Its robust automatic operating system ensures dependable performance across demanding machining applications, making SOLO an ideal solution for modern manufacturing processes requiring high productivity and accurate finishing.
+             The BSF counterboring tool by HEULE Werkzeug AG is designed for efficient and reliable counterboring and spotfacing in automated machining applications, using internal coolant activation for precise and consistent operation. What makes the BSF system versatile is its availability in multiple configurations, including BSF Air for pneumatic activation and BSF Manual for manual applications, allowing the tool to adapt to different production requirements. Supplied as a standard unit without a blade, the blade must be ordered separately to match the specific material and application. The standard “1A” blade coating is optimized for steel alloys, while alternative coatings such as “1D” are available for aluminium machining applications. Featuring a cylindrical shank for secure clamping, the tool also offers optional Weldon (“-HB”) and Whistle Notch (“-HE”) shank configurations upon request, providing additional flexibility for demanding machining environments.
             </p>
           </div>
         </section>
