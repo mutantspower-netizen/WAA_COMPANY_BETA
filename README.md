@@ -17,7 +17,7 @@ This project was developed during my internship as part of the UX/UI and website
 - Figma
 - Netlify
 
-## Installation
+## Installation and Startup
 
 1. Clone or download the project files
 2. Open the project folder
@@ -25,3 +25,7 @@ This project was developed during my internship as part of the UX/UI and website
 
 ```bash
 npm install
+```
+```bash
+npm run dev
+```
