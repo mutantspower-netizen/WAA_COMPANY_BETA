@@ -1,5 +1,6 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import { useLanguage } from "@/lib/language";
 
 const brandLogos = [
   {
@@ -62,20 +63,23 @@ const customerLogos = [
 
 const machineTypes = [
   {
-    label: "Milling",
+    labelKey: "milling",
     src: "https://api.builder.io/api/v1/image/assets/TEMP/c36e6d2733eab6673d4587ac42c9b07fc8d37b60?width=360",
   },
   {
-    label: "LATH",
+    labelKey: "lath",
     src: "https://api.builder.io/api/v1/image/assets/TEMP/06d6aa1c0b7492c8ceb7fdb57bc75f39d6b5677d?width=360",
   },
   {
-    label: "GRINDING",
+    labelKey: "grinding",
     src: "https://api.builder.io/api/v1/image/assets/TEMP/abeccef00f8ddf8c561f1bc1ed121ddce4e2c638?width=360",
   },
 ];
 
 export default function Index() {
+  const { text } = useLanguage();
+  const home = text.home;
+
   return (
     <div className="min-h-screen bg-[#f5f5f5] font-sarabun">
       <Navbar />
@@ -91,7 +95,7 @@ export default function Index() {
         <div className="absolute inset-0 bg-black/20" />
         <div className="absolute top-1/2 left-[5%] -translate-y-1/2 text-center max-w-[280px]">
           <p className="font-sarabun text-[18px] sm:text-[20px] font-extrabold text-[#cfcdcd] leading-tight">
-            Sale Partner and tools consulting domestically in thailand
+            {home.hero}
           </p>
         </div>
       </section>
@@ -106,12 +110,12 @@ export default function Index() {
         <div className="relative max-w-[1200px] mx-auto px-6">
           <div className="flex flex-col items-center text-center mb-10">
             <p className="font-noto-serif text-[10px] font-semibold text-[#746969] tracking-widest uppercase mb-2">
-              TOOLS DISTRIBUTION
+              {home.toolsDistribution}
             </p>
             <div className="flex items-center gap-3 justify-center">
               <span className="block h-px w-12 bg-[#F51111]" />
               <h2 className="font-noto-serif text-[18px] sm:text-[20px] font-medium text-black text-center">
-                Your reliable partner for industrial tools and equipment
+                {home.reliablePartner}
               </h2>
               <span className="block h-px w-10 bg-[#F51111]" />
             </div>
@@ -120,14 +124,14 @@ export default function Index() {
           {/* Machine Type Cards */}
           <div className="flex flex-wrap justify-center gap-6 md:gap-10">
             {machineTypes.map((m) => (
-              <div key={m.label} className="flex flex-col items-center">
+              <div key={m.labelKey} className="flex flex-col items-center">
                 <img
                   src={m.src}
-                  alt={m.label}
+                  alt={home[m.labelKey]}
                   className="w-[160px] sm:w-[180px] h-[140px] sm:h-[176px] object-cover"
                 />
                 <span className="mt-2 font-noto-serif text-[14px] sm:text-[15px] font-semibold text-[#746969]">
-                  {m.label}
+                  {home[m.labelKey]}
                 </span>
               </div>
             ))}
@@ -135,12 +139,12 @@ export default function Index() {
 
           <div className="flex flex-col items-center mt-12 md:mt-16 px-2">
             <p className="font-noto-serif text-[10px] font-semibold text-[#746969] tracking-widest uppercase mb-1">
-              CONSUMABLE
+              {home.consumable}
             </p>
             <div className="flex items-center gap-3">
               <span className="hidden sm:block h-px w-12 bg-[#F51111] shrink-0" />
               <h2 className="font-noto-serif text-[16px] sm:text-[20px] font-medium text-black">
-                One stop solution for all machining consumables and industrial tooling
+                {home.oneStop}
               </h2>
               <span className="hidden sm:block h-px w-12 bg-[#F51111] shrink-0" />
             </div>
@@ -158,9 +162,7 @@ export default function Index() {
         />
         <div className="absolute bottom-0 left-0 p-6 sm:p-10 max-w-xs sm:max-w-sm">
           <p className="font-noto-serif text-[14px] sm:text-[18px] font-bold text-[#686464] leading-snug bg-white/60 p-3 rounded">
-            More than just a tool supplier, we are your one-stop partner for
-            industrial tools and machining consumables, offering a wide range of
-            products, reliable supply, and service you can trust.
+            {home.supplier}
           </p>
         </div>
       </section>
@@ -176,7 +178,7 @@ export default function Index() {
           <div className="flex items-center justify-center gap-3 mb-10">
             <span className="block h-px w-8 bg-[#A32A19]" />
             <p className="font-sarabun text-[16px] sm:text-[20px] font-normal text-black text-center">
-              Tools and machining consumables from trusted international brands
+              {home.trustedBrands}
             </p>
             <span className="block h-px w-8 bg-[#A32A19]" />
           </div>
@@ -209,12 +211,12 @@ export default function Index() {
         <div className="relative max-w-[1200px] mx-auto px-6">
           <div className="flex flex-col items-center text-center mb-10">
             <p className="font-noto-serif text-[10px] font-semibold text-[#746969] tracking-widest uppercase mb-2">
-              OUR CUSTOMERS
+              {home.customers}
             </p>
             <div className="flex items-center gap-3 justify-center">
               <span className="block h-px w-8 bg-[#F51111]" />
               <h2 className="font-noto-serif text-[18px] sm:text-[20px] font-medium text-black">
-                Manufacturers that trust W.A.A CO., LTD
+                {home.trustedBy}
               </h2>
               <span className="block h-px w-8 bg-[#F51111]" />
             </div>

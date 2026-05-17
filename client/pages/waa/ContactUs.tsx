@@ -1,7 +1,11 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import { useLanguage } from "@/lib/language";
 
 export default function ContactUs() {
+  const { text } = useLanguage();
+  const contact = text.contact;
+
   return (
     <div className="min-h-screen bg-[#f5f5f5] font-sarabun">
       <Navbar />
@@ -17,24 +21,24 @@ export default function ContactUs() {
         {/* Contact Title Section */}
         <section className="relative max-w-[1200px] mx-auto px-6 pt-10 pb-16">
           <p className="font-sarabun text-[28px] sm:text-[32px] font-bold mb-0">
-            <span className="text-black">CONTACT </span>
-            <span className="text-[#F11111]">US</span>
+            <span className="text-black">{contact.titleBlack} </span>
+            <span className="text-[#F11111]">{contact.titleRed}</span>
           </p>
 
           <div className="flex flex-col lg:flex-row gap-10 mt-4">
             {/* Left: Contact info */}
             <div className="flex-1">
               <h1 className="font-sarabun text-[36px] sm:text-[50px] font-bold text-black leading-tight">
-                GET IN
+                {contact.getIn}
               </h1>
               <h2 className="font-sarabun text-[36px] sm:text-[50px] font-bold text-[#F22703] leading-tight">
-                TOUCH WITH US
+                {contact.touch}
               </h2>
               <div className="mt-6 border-t border-black pt-4 space-y-6">
                 {/* Phone */}
                 <div>
                   <p className="font-sarabun text-[14px] font-bold text-[#F22703] mb-2">
-                    PHONE
+                    {contact.phone}
                   </p>
                   <p className="font-sarabun text-[14px] font-bold text-black">
                     02-731-0455-8
@@ -44,7 +48,7 @@ export default function ContactUs() {
                 {/* Email */}
                 <div>
                   <p className="font-sarabun text-[14px] font-bold text-[#F22703] mb-2">
-                    EMAIL
+                    {contact.email}
                   </p>
                   <p className="font-sarabun text-[14px] font-bold text-black">
                     Waatool@ksc.th.com
@@ -54,7 +58,7 @@ export default function ContactUs() {
                 {/* Address */}
                 <div>
                   <p className="font-sarabun text-[14px] font-bold text-[#F22703] mb-2">
-                    ADDRESS
+                    {contact.address}
                   </p>
                   <p className="font-sarabun text-[13px] sm:text-[14px] font-bold text-black leading-relaxed">
                     2756, 2758 Soi 128/4 Latphrao Rd.
@@ -69,19 +73,19 @@ export default function ContactUs() {
               <div className="mt-8">
                 <div className="flex items-center gap-1 mb-2">
                   <span className="font-sarabun text-[28px] sm:text-[32px] font-bold text-black">
-                    BUSINESS
+                    {contact.business}
                   </span>
                   <span className="font-sarabun text-[28px] sm:text-[32px] font-bold text-[#F22703]">
-                    HOURS
+                    {contact.hours}
                   </span>
                 </div>
                 <div className="border-t border-black mt-1 pt-3">
                   <p className="font-sarabun text-[13px] sm:text-[14px] font-bold text-black leading-relaxed">
-                    Monday - Friday: 08:00 - 17:00
+                    {contact.weekday}
                     <br />
-                    Saturday: 08:00 - 12:00
+                    {contact.saturday}
                     <br />
-                    Sunday & Public Holidays: Closed
+                    {contact.sunday}
                   </p>
                 </div>
               </div>
@@ -114,7 +118,7 @@ export default function ContactUs() {
       {/* Quick Contact Form Section */}
       <section className="relative max-w-[1200px] mx-auto px-6 py-16">
         <h2 className="font-sarabun text-[28px] sm:text-[32px] font-bold text-center mb-12">
-          <span className="text-black">Consult with </span>
+          <span className="text-black">{contact.consultWith} </span>
           <span className="text-[#F22703]">W.A.A CO.LTD</span>
         </h2>
 
@@ -122,18 +126,18 @@ export default function ContactUs() {
           <form className="space-y-6">
             <div>
               <label className="font-sarabun text-[14px] font-bold text-black block mb-2">
-                Name
+                {contact.name}
               </label>
               <input
                 type="text"
-                placeholder="Your name"
+                placeholder={contact.namePlaceholder}
                 className="w-full px-4 py-2 border border-gray-300 rounded-lg font-sarabun text-[14px] focus:outline-none focus:border-[#F22703]"
               />
             </div>
 
             <div>
               <label className="font-sarabun text-[14px] font-bold text-black block mb-2">
-                Email
+                {contact.email}
               </label>
               <input
                 type="email"
@@ -144,28 +148,28 @@ export default function ContactUs() {
 
             <div>
               <label className="font-sarabun text-[14px] font-bold text-black block mb-2">
-                Subject
+                {contact.subject}
               </label>
               <input
                 type="text"
-                placeholder="Your subject"
+                placeholder={contact.subjectPlaceholder}
                 className="w-full px-4 py-2 border border-gray-300 rounded-lg font-sarabun text-[14px] focus:outline-none focus:border-[#F22703]"
               />
             </div>
 
             <div>
               <label className="font-sarabun text-[14px] font-bold text-black block mb-2">
-                Message
+                {contact.message}
               </label>
               <textarea
                 rows={5}
-                placeholder="Your message"
+                placeholder={contact.messagePlaceholder}
                 className="w-full px-4 py-2 border border-gray-300 rounded-lg font-sarabun text-[14px] focus:outline-none focus:border-[#F22703]"
               ></textarea>
             </div>
 
             <button className="w-full bg-[#F22703] text-white font-sarabun text-[14px] font-bold py-3 rounded-lg hover:bg-[#D91902] transition-colors">
-              SEND MESSAGE
+              {contact.send}
             </button>
           </form>
         </div>

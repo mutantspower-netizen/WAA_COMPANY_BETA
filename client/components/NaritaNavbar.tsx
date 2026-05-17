@@ -1,14 +1,17 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
+import { useLanguage } from "@/lib/language";
 
 const NAV_LINKS = [
-  { label: "PRODUCT", to: "/nrita" },
-  { label: "CONTACT", to: "/contact" },
+  { labelKey: "product", to: "/nrita" },
+  { labelKey: "contact", to: "/contact" },
 ];
 
 export default function NaritaNavbar() {
   const [menuOpen, setMenuOpen] = useState(false);
   const location = useLocation();
+  const { lang, text, toggleLang } = useLanguage();
+  const nav = text.nav;
 
   return (
     <header className="w-full bg-[#1e1e1e] fixed top-0 left-0 z-50">
@@ -42,22 +45,25 @@ export default function NaritaNavbar() {
               NARITA
             </span>
             <span className="font-sarabun text-[17px] font-extrabold text-white">
-              PRODUCT
+              {nav.product}
             </span>
           </Link>
           {NAV_LINKS.slice(1).map((link) => (
             <Link
-              key={link.label}
+              key={link.labelKey}
               to={link.to}
               className={`px-3 py-2 font-sarabun text-[17px] font-extrabold text-[#fff3f3] hover:text-white transition-colors whitespace-nowrap ${
                 location.pathname === link.to ? "text-white" : ""
               }`}
             >
-              {link.label}
+              {nav[link.labelKey]}
             </Link>
           ))}
-          <button className="px-3 py-2 font-sarabun text-[17px] font-extrabold text-[#fff3f3] hover:text-white transition-colors">
-            EN/TH
+          <button
+            className="px-3 py-2 font-sarabun text-[17px] font-extrabold text-[#fff3f3] hover:text-white transition-colors"
+            onClick={toggleLang}
+          >
+            {lang === "en" ? "TH" : "EN"}
           </button>
         </nav>
 
@@ -88,20 +94,23 @@ export default function NaritaNavbar() {
             <span className="bg-[#B30B0F] text-white font-sarabun text-[17px] font-extrabold px-2 py-0.5 rounded-sm">
               NARITA
             </span>
-            <span className="font-sarabun text-[17px] font-extrabold text-white">PRODUCT</span>
+            <span className="font-sarabun text-[17px] font-extrabold text-white">{nav.product}</span>
           </Link>
           {NAV_LINKS.slice(1).map((link) => (
             <Link
-              key={link.label}
+              key={link.labelKey}
               to={link.to}
               className="block py-3 font-sarabun text-[17px] font-extrabold text-[#fff3f3] hover:text-white transition-colors border-b border-white/10 last:border-0"
               onClick={() => setMenuOpen(false)}
             >
-              {link.label}
+              {nav[link.labelKey]}
             </Link>
           ))}
-          <button className="block w-full text-left py-3 font-sarabun text-[17px] font-extrabold text-[#fff3f3] hover:text-white transition-colors">
-            EN/TH
+          <button
+            className="block w-full text-left py-3 font-sarabun text-[17px] font-extrabold text-[#fff3f3] hover:text-white transition-colors"
+            onClick={toggleLang}
+          >
+            {lang === "en" ? "TH" : "EN"}
           </button>
         </div>
       )}

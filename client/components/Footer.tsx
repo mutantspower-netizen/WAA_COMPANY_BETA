@@ -1,4 +1,8 @@
+import { useLanguage } from "@/lib/language";
+
 export default function Footer() {
+  const { text } = useLanguage();
+
   return (
     <footer className="w-full bg-[#808080]">
       <div className="max-w-[1440px] mx-auto px-6 min-h-[60px] py-3 flex items-center justify-between gap-4 flex-wrap">
@@ -6,8 +10,7 @@ export default function Footer() {
           W.A.A CO.LTD
         </span>
         <span className="font-sarabun text-white text-[13px] font-semibold text-center hidden sm:block">
-          Consult with W.A.A CO.LTD to find the ideal tool solution and maximize
-          your performance and efficiency
+          {text.footer.consult}
         </span>
         <div className="flex items-center gap-2 min-w-0">
           <img

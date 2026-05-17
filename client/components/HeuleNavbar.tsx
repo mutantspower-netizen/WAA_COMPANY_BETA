@@ -1,16 +1,19 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import { useLanguage } from "@/lib/language";
 
 const NAV_LINKS = [
-  { label: "DEBURRING", to: "/heule/deburring" },
-  { label: "CHAMFERING", to: "/heule/chamfering" },
-  { label: "COUNTERBORING", to: "/heule/counterboring" },
-  { label: "DRILLING COMBINE", to: "/heule/drilling-combine" },
-  { label: "CONTACT", to: "/contact" },
+  { labelKey: "deburring", to: "/heule/deburring" },
+  { labelKey: "chamfering", to: "/heule/chamfering" },
+  { labelKey: "counterboring", to: "/heule/counterboring" },
+  { labelKey: "drillingCombine", to: "/heule/drilling-combine" },
+  { labelKey: "contact", to: "/contact" },
 ];
 
 export default function HeuleNavbar() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const { lang, text, toggleLang } = useLanguage();
+  const nav = text.nav;
 
   return (
     <header className="w-full bg-[#1e1e1e] fixed top-0 left-0 z-50">
@@ -39,15 +42,18 @@ export default function HeuleNavbar() {
         <nav className="hidden md:flex items-center gap-2">
           {NAV_LINKS.map((link) => (
             <Link
-              key={link.label}
+              key={link.labelKey}
               to={link.to}
               className="px-3 py-2 font-sarabun text-[17px] font-extrabold text-[#fff3f3] hover:text-white transition-colors whitespace-nowrap"
             >
-              {link.label}
+              {nav[link.labelKey]}
             </Link>
           ))}
-          <button className="px-3 py-2 font-sarabun text-[17px] font-extrabold text-[#fff3f3] hover:text-white transition-colors">
-            EN/TH
+          <button
+            className="px-3 py-2 font-sarabun text-[17px] font-extrabold text-[#fff3f3] hover:text-white transition-colors"
+            onClick={toggleLang}
+          >
+            {lang === "en" ? "TH" : "EN"}
           </button>
         </nav>
 
@@ -72,16 +78,19 @@ export default function HeuleNavbar() {
         <div className="md:hidden bg-[#1e1e1e] border-t border-white/10 px-6 pb-4">
           {NAV_LINKS.map((link) => (
             <Link
-              key={link.label}
+              key={link.labelKey}
               to={link.to}
               className="block py-3 font-sarabun text-[17px] font-extrabold text-[#fff3f3] hover:text-white transition-colors border-b border-white/10 last:border-0"
               onClick={() => setMenuOpen(false)}
             >
-              {link.label}
+              {nav[link.labelKey]}
             </Link>
           ))}
-          <button className="block w-full text-left py-3 font-sarabun text-[17px] font-extrabold text-[#fff3f3] hover:text-white transition-colors">
-            EN/TH
+          <button
+            className="block w-full text-left py-3 font-sarabun text-[17px] font-extrabold text-[#fff3f3] hover:text-white transition-colors"
+            onClick={toggleLang}
+          >
+            {lang === "en" ? "TH" : "EN"}
           </button>
         </div>
       )}

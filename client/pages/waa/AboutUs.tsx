@@ -1,30 +1,12 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-
-const values = [
-  {
-    title: "OUR",
-    titleRed: "COMPANY VALUES",
-    desc: "The company has focused on creating products and services through 3 important business concepts for more than 30 years with quality products, reasonable prices, good service.",
-  },
-  {
-    title: "QUALITY",
-    titleRed: "PRODUCTS",
-    desc: "To increase work efficiency and reduce the impact on production of customers.",
-  },
-  {
-    title: "REASONABLE",
-    titleRed: "PRICES",
-    desc: "To reduce overall costs and still maintain the quality of customer workpiece.",
-  },
-  {
-    title: "GOOD",
-    titleRed: "SERVICE",
-    desc: "To respond and consult customer needs accurately and with fast delivery.",
-  },
-];
+import { useLanguage } from "@/lib/language";
 
 export default function AboutUs() {
+  const { text } = useLanguage();
+  const about = text.about;
+  const values = about.values;
+
   return (
     <div className="min-h-screen bg-[#f5f5f5] font-sarabun">
       <Navbar />
@@ -40,8 +22,8 @@ export default function AboutUs() {
         {/* Company Title Section */}
         <section className="relative max-w-[1200px] mx-auto px-6 pt-10 pb-16">
           <p className="font-sarabun text-[28px] sm:text-[32px] font-bold mb-0">
-            <span className="text-black">ABOUT </span>
-            <span className="text-[#F11111]">US</span>
+            <span className="text-black">{about.titleBlack} </span>
+            <span className="text-[#F11111]">{about.titleRed}</span>
           </p>
 
           <div className="flex flex-col lg:flex-row gap-10 mt-4">
@@ -51,7 +33,7 @@ export default function AboutUs() {
                 WAA.CO.LTD
               </h1>
               <h2 className="font-sarabun text-[36px] sm:text-[50px] font-bold text-[#F22703] leading-tight">
-                COMPANY PROFILE
+                {about.companyProfile}
               </h2>
               <div className="mt-6 border-t border-black pt-4">
                 <p className="font-sarabun text-[13px] sm:text-[14px] font-bold text-black leading-relaxed">
@@ -65,24 +47,18 @@ export default function AboutUs() {
               <div className="mt-8">
                 <div className="flex items-center justify-end gap-1 mb-2">
                   <span className="font-sarabun text-[28px] sm:text-[32px] font-bold text-black">
-                    OUR{" "}
+                    {about.our}{" "}
                   </span>
                   <span className="font-sarabun text-[28px] sm:text-[32px] font-bold text-[#F22703]">
-                    COMPANY
+                    {about.company}
                   </span>
                 </div>
                 <div className="border-t border-black mt-1 pt-3">
                   <p className="font-sarabun text-[13px] sm:text-[14px] font-bold text-black text-right leading-relaxed">
-                    Since 1985, Mr. Witthya Sotneam had created W.A.A. Co.,
-                    Ltd. With company's expertise in machinery and product
-                    selection has earned them trust across various industry
-                    customers, notably automotive parts manufacturing and mold
-                    production.
+                    {about.companyText}
                     <br />
                     <br />
-                    W.A.A. Co., Ltd. aim to provide customer the most suitable
-                    solutions and products for their manufacturing with the best
-                    price, service and delivery.
+                    {about.companyText2}
                   </p>
                 </div>
               </div>

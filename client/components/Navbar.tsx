@@ -1,16 +1,17 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
+import { useLanguage } from "@/lib/language";
 
 const NAV_LINKS = [
-  { label: "W.A.A X HEULE", to: "/heule", 
+  { labelKey: "heule", to: "/heule", 
     dropdown: [
-      { label: "DEBURRING", to: "/heule/deburring",
+      { labelKey: "deburring", to: "/heule/deburring",
          dropdown: [
         { label: "COFA", to: "/heule/cofa-deburring" },
         { label: "DL2", to: "/heule/dl2-deburring" },
       ],
        },
-      { label: "CHAMFERING", to: "/heule/chamfering" ,
+      { labelKey: "chamfering", to: "/heule/chamfering" ,
         dropdown: [
         { label: "SNAP", to: "/heule/snap-chamfering" },
         { label: "DEFA", to: "/heule/defa-chamfering" }, 
@@ -18,13 +19,13 @@ const NAV_LINKS = [
         ],
       },
         
-      { label: "COUNTERBORING", to: "/heule/counterboring", 
+      { labelKey: "counterboring", to: "/heule/counterboring", 
          dropdown: [
         { label: "BSF", to: "/heule/bsf-counterboring" },
         { label: "SOLO", to: "/heule/solo-counterboring" }, 
         ],
       },
-      { label: "DRILLINGCOMBINE", to: "/heule/drilling-combine" ,
+      { labelKey: "drillingCombine", to: "/heule/drilling-combine" ,
          dropdown: [
         { label: "VEX", to: "/heule/vex-drilling-combine" },
         { label: "DCC", to: "/heule/dcc-drilling-combine" }, 
@@ -34,20 +35,22 @@ const NAV_LINKS = [
     ]
   },
   
-  { label: "W.A.A X NARITA", to: "/nrita", 
+  { labelKey: "narita", to: "/nrita", 
       dropdown: [
-      { label: "BALL NOSE 2 FLUTE", to: "/nrita/ball-nose" },
-      { label: "2 FLUTES END MILL", to: "/nrita/2-flutes" },
-      { label: "BALL NOSE 4 FLUTE", to: "/nrita/4-flutes" },
+      { labelKey: "ballNose2Flute", to: "/nrita/ball-nose" },
+      { labelKey: "endMill2Flutes", to: "/nrita/2-flutes" },
+      { labelKey: "ballNose4Flute", to: "/nrita/4-flutes" },
     ],
   },
-  { label: "ABOUT US", to: "/about" },
-  { label: "CONTACT", to: "/contact" },
+  { labelKey: "about", to: "/about" },
+  { labelKey: "contact", to: "/contact" },
 ];
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
   const location = useLocation();
+  const { lang, text, toggleLang } = useLanguage();
+  const nav = text.nav;
 
   return (
     <header className="w-full bg-[#1e1e1e] fixed top-0 left-0 z-50">
@@ -91,7 +94,7 @@ export default function Navbar() {
 
         <nav className="hidden md:flex items-center gap-2">
           {NAV_LINKS.map((link) => (
-  <div className="relative group" key={link.label}>
+  <div className="relative group" key={link.labelKey}>
     
     <Link
       to={link.to || "#"}
@@ -99,25 +102,25 @@ export default function Navbar() {
         location.pathname === link.to ? "text-white" : ""
       }`}
     >
-      {link.label}
+      {nav[link.labelKey]}
     </Link>
 
    {link.dropdown && (
   <div className="absolute hidden group-hover:block bg-[#2a2a2a] min-w-[220px] shadow-lg z-50">
     
     {link.dropdown.map((item) => (
-      <div className="relative group/sub" key={item.label}>
+      <div className="relative group/sub" key={item.labelKey || item.label}>
         
         {item.to ? (
           <Link
             to={item.to}
             className="block px-4 py-2 text-white hover:bg-[#3a3a3a]"
           >
-            {item.label}
+            {item.labelKey ? nav[item.labelKey] : item.label}
           </Link>
         ) : (
           <div className="block px-4 py-2 text-white hover:bg-[#3a3a3a] cursor-pointer">
-            {item.label}
+            {item.labelKey ? nav[item.labelKey] : item.label}
           </div>
         )}
 
@@ -145,6 +148,12 @@ export default function Navbar() {
 
   </div>
 ))}
+          <button
+            className="px-3 py-2 font-sarabun text-[18px] font-extrabold text-[#fff3f3] hover:text-white transition-colors"
+            onClick={toggleLang}
+          >
+            {lang === "en" ? "TH" : "EN"}
+          </button>
         </nav>
 
         <button
@@ -174,13 +183,16 @@ export default function Navbar() {
               onClick={() => setMenuOpen(false)}
             >
               
-              {link.label}
+              {nav[link.labelKey]}
               
             </Link>
             
           ))}
-          <button className="block w-full text-left py-3 font-sarabun text-[18px] font-extrabold text-[#fff3f3] hover:text-white transition-colors">
-            EN/TH
+          <button
+            className="block w-full text-left py-3 font-sarabun text-[18px] font-extrabold text-[#fff3f3] hover:text-white transition-colors"
+            onClick={toggleLang}
+          >
+            {lang === "en" ? "TH" : "EN"}
           </button>
         </div>
       )}
