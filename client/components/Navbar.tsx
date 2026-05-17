@@ -85,7 +85,7 @@ export default function Navbar() {
     <img
       src="https://api.builder.io/api/v1/image/assets/TEMP/19f8b09e554ec6d01e98fb980fc860612632e4f1?width=300"
       alt="Narita End Mills"
-      className="h-25 w-100 translate-y-5 object-contain ml-[-40px]"
+      className="h-35 w-150 translate-y-4 object-contain ml-[-40px]"
     />
   )}
 
