@@ -60,6 +60,13 @@ export default function Dl2Deburring() {
             <h1 className="font-sarabun text-[#A32A19] text-3xl md:text-4xl lg:text-5xl font-semibold mb-4">
               DL2 DEBURRING
             </h1>
+            <div className="flex-1 flex items-center justify-center mt-12 gap-6 mb-16">
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets%2F2f0b492e34a14ec29346019ef2a7eaa9%2F850adb3e4b3e42cd9b3e52f43a9520fe?format=webp&width=800&height=1200"
+                alt="COFA Deburring Tools"
+                className="w-full max-w-[380px] object-contain"
+              />
+            </div>
             <p className="font-sarabun text-black text-sm md:text-[15px] leading-relaxed max-w-[680px]">
               The DL2 deburring tool by HEULE Werkzeug AG is designed for efficient front and back deburring of drilled
               holes—including uneven, sloped, or cross-hole geometries—in a single continuous operation. What makes DL2 unique

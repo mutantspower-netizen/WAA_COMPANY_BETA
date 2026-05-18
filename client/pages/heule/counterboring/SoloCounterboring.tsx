@@ -35,11 +35,13 @@ const cuttingRows = [
 ];
 
 const processSteps = [
-  { label: "Rapid feed to position A or\n1.0 mm distance\nSpindle turning with clockwise\nInternal coolant on" },
+  { label: " Rapid feed to 1.0 mm in front of the bore \nSprindle Stop!\nInternal coolant on (20–50 bar)\n Dwell time 2–5 sec" },
   { label: "Working feed to position B" },
   { label: "Rapid feed to position C or\n0.5 mm distance" },
   { label: "Working feed to position D" },
   { label: "Rapid feed out of the workpiece" },
+  { label: "Rapid feed out of the workpiece" }
+
 ];
 
 export default function Dl2Deburring() {
@@ -60,6 +62,13 @@ export default function Dl2Deburring() {
             <h1 className="font-sarabun text-[#A32A19] text-3xl md:text-4xl lg:text-5xl font-semibold mb-4">
              SOLO COUNTERBORING
             </h1>
+            <div className="flex-1 flex items-center justify-center mt-12 gap-6 mb-16">
+              <img
+                src="\img\SOLO_no_bg.png"
+                alt="COFA Deburring Tools"
+                className="w-full max-w-[380px] object-contain"
+              />
+            </div>
             <p className="font-sarabun text-black text-sm md:text-[15px] leading-relaxed max-w-[680px]">
               The SOLO tool by HEULE Werkzeug AG is a high-performance automatic counterboring and spotfacing solution designed for efficient front and back machining of holes in a single continuous operation. What makes SOLO unique is its ability to perform precise counterboring and spotfacing on both sides of a workpiece without repositioning, significantly reducing cycle times and improving machining efficiency. Engineered for use in CNC, transfer, dial, and multi-spindle machines, the tool is optimized for high-volume production environments where reliability, precision, and process consistency are essential. Its robust automatic operating system ensures dependable performance across demanding machining applications, making SOLO an ideal solution for modern manufacturing processes requiring high productivity and accurate finishing.
             </p>
@@ -112,32 +121,30 @@ export default function Dl2Deburring() {
                   OPERATING PRINCIPLE
                 </h2>
                 <p className="font-sarabun text-black text-sm md:text-[15px] leading-relaxed">
-                  Due to its size, the DL2 blade performs the function of the spring and the blade simultaneously. Due to the
-                  rigid alignment of the blade, the operating principle is different from that of other HEULE tool systems. The
-                  blade has been designed in such a way that it can be used in confined spaces without compromising on
-                  functionality.
+                   Two versions of the SOLO have been developed to fulfil the requirements of different workpiece materials requiring different cutting speeds. These are SOLO  and SOLO2. The two tool systems are vis ually identical, have however a distinct  internal configuration difference.<br/>
+                  Centrifugal force caused by rotation of  the tool causes two guided weights in side the control unit to slide outwards.  The linear motion of the sliding weights is  converted into rotary motion with a rack  and pinion systems. the pinion is mount ed onto the end of the blade control shaft,  which rotate as the weights slide back  and forth. this rotary motion of the blade  control shaft is utilised to either extend or  retract the blade.<br/>
+                  The distance travelled by the weights is  exactly calculated to cause the blade  control shaft to rotate by 180°. The cen trifugal/outward  movement of the  weights therefore causes the blade to ex tend with the SOLO and to rectract with  the SOLO2
                 </p>
               </div>
 
               {/* Center: Product image */}
               <div className="flex items-center justify-center">
                 <img
-                  src="https://cdn.builder.io/api/v1/image/assets%2F2f0b492e34a14ec29346019ef2a7eaa9%2F8b4dad89ebff434c905ae86f36683acf?format=webp&width=800&height=1200"
+                  src="\SOLO\solo princ.png"
                   alt="DL2 Tool"
-                  className="w-full max-w-[260px] object-contain"
+                  className="w-full max-w-[160px] object-contain"
                 />
               </div>
 
               {/* Right: Controlled Deburring */}
               <div className="flex flex-col justify-center">
                 <h2 className="font-sarabun text-[#A32A19] text-xl md:text-2xl font-semibold mb-3">
-                  CONTROLLED DEBURRING
+                 APPLICATION LIMITS
                 </h2>
                 <p className="font-sarabun text-black text-sm md:text-[15px] leading-relaxed">
-                  The blade produces the desired debur in working feed. Upon completion of deburring, the blade automatically
-                  retracts into the blade housing without external activation. The specially designed sliding section of the blade
-                  prevents the bores from being damaged. The spring coated blade automatically returns to its neutral position
-                  when it re-fits the bore.
+                  Surfaces or partially interrupt ed cuts up to a maximum pitch  angle of 20° are permissible.<br/>
+                  Excessive curvatures or pitch  angles can cause the blade and  tool to break. Therefore, such  applications are only feasible  to a limited extent.<br/>  
+                  The HEULE specialists are hap py to advise you.Excessive pitch angles and ful ly interrupted cuts, such as  with punching, slotting, etc.,  cause the blade and tool to  break.
                 </p>
               </div>
             </div>
@@ -146,7 +153,12 @@ export default function Dl2Deburring() {
 
         {/* ── TOOL DESIGN ──────────────────────────────────────────────── */}
         <section className="relative py-12 md:py-16">
-          <img
+         <img
+              src="\SOLO\solo tool design.png"
+              alt="SOLO Tool Design"
+             className="w-full max-w-[400px] object-contain mx-auto "
+            />
+           <img
             src="https://api.builder.io/api/v1/image/assets/TEMP/091c1556916c9587f51a28f59014d90ac185e978?width=2896"
             alt=""
             className="absolute inset-0 w-full h-full object-cover select-none pointer-events-none opacity-25"
@@ -165,8 +177,42 @@ export default function Dl2Deburring() {
             </p>
           </div>
         </section>
+        <section className="relative py-12 md:py-16 overflow-hidden">
+  
+  <img
+    src="https://api.builder.io/api/v1/image/assets/TEMP/091c1556916c9587f51a28f59014d90ac185e978?width=2896"
+    alt=""
+    className="absolute inset-0 w-full h-full object-cover select-none pointer-events-none opacity-25"
+  />
 
-        {/* ── DL2 PROCESS STEPS ────────────────────────────────────────── */}
+  <div className="relative max-w-[1200px] mx-auto px-6 flex flex-col md:flex-row items-center gap-10">
+    
+    {/* Left Side Image */}
+    <div className="w-full md:w-1/2 flex justify-center">
+      <img
+        src="\SOLO\Solo blade.png"
+        alt="SOLO Tool Design"
+        className="w-full max-w-[500px] object-contain"
+      />
+    </div>
+
+    {/* Right Side Text */}
+    <div className="w-full md:w-1/2">
+      <h2 className="font-sarabun text-[#A32A19] text-xl md:text-2xl font-semibold mb-4">
+        BLADE DESIGN
+      </h2>
+
+      <p className="font-sarabun text-black text-sm md:text-[15px] leading-relaxed">
+        The design of the blade and the blade  housing are customised for the specific  application.<br/> 
+        The use of bronze guide bushings is   recommended for applications with high  radial forces during machining, such as  when cutting radiuses, chamfers, or  when the cut is interrupted. Guide bush ings can also be useful to reduce any  marking on the surface of the bore  caused by the blade housing, especially  when machining softer materials.
+      </p>
+    </div>
+
+  </div>
+</section>
+        
+
+        {/* ── SOLO PROCESS STEPS ────────────────────────────────────────── */}
         <section className="relative py-12 md:py-16">
           <img
             src="https://api.builder.io/api/v1/image/assets/TEMP/59460b3436a961710e2a5960760b4a43317ac5d9?width=2896"
@@ -175,22 +221,38 @@ export default function Dl2Deburring() {
           />
           <div className="relative max-w-[1100px] mx-auto px-6">
             <h2 className="font-sarabun text-[#A32A19] text-xl md:text-2xl font-semibold text-center mb-8">
-              DL2 PROCESS STEPS
+              SOLO PROCESS STEPS
             </h2>
-            <div className="grid grid-cols-2 sm:grid-cols-3 gap-6 md:gap-8">
-              {processSteps.map((step, i) => (
-                <div key={i} className="flex flex-col items-center gap-3">
-                  <div className="w-full aspect-square max-w-[180px] bg-white/60 border border-[#B8B8B8] rounded flex items-center justify-center">
-                    <span className="text-[#A32A19] font-semibold text-2xl">{i + 1}</span>
-                  </div>
-                  <p className="font-sarabun text-black text-xs md:text-sm leading-snug text-center whitespace-pre-line">
-                    {step.label}
-                  </p>
-                </div>
+            <img
+              src="\SOLO\solo step 1.png"
+              alt="SOLO Process Steps Diagram 1"
+              className="w-full object-contain mb-2"
+            />
+            <div className="grid grid-cols-3 gap-2 mb-8">
+              {processSteps.slice(0, 3).map((step, i) => (
+                <p key={i} className="font-sarabun text-black text-xs md:text-sm leading-snug whitespace-pre-line text-center">
+                  {step.label}
+                </p>
               ))}
             </div>
+
+            <img
+              src="\SOLO\solo step 2.png"
+              alt="SOLO Process Steps Diagram 2"
+              className="w-full object-contain mb-2"
+            />
+            <div className="grid grid-cols-3 gap-2">
+              {processSteps.slice(3).map((step, i) => (
+                <p key={i} className="font-sarabun text-black text-xs md:text-sm leading-snug text-center">
+                  {step.label}
+                </p>
+              ))}
+            </div>
+            
           </div>
         </section>
+        
+        
 
         {/* ── PROGRAMMING DIMENSION EXAMPLE ────────────────────────────── */}
         <section className="relative py-12 md:py-16">
@@ -207,8 +269,8 @@ export default function Dl2Deburring() {
               {/* Tool image */}
               <div className="flex-shrink-0 flex items-center justify-center w-full md:w-auto">
                 <img
-                  src="https://cdn.builder.io/api/v1/image/assets%2F2f0b492e34a14ec29346019ef2a7eaa9%2Febeb565a9831444db25117ed98f1ba4a?format=webp&width=800&height=1200"
-                  alt="DL2 Dimension Diagram"
+                  src="\SOLO\solo progm ex.png"
+                  alt="SOLO Dimension Diagram"
                   className="w-full max-w-[220px] object-contain"
                 />
               </div>

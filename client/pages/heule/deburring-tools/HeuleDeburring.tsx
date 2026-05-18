@@ -83,21 +83,13 @@ export default function HeuleDeburring() {
 
             {/* Three DL2 tool images — right */}
             <div className="flex-1 flex items-end justify-center gap-4">
-              <img
-                src="https://api.builder.io/api/v1/image/assets/TEMP/76a1352e2bf60bff0801ff3604dce47e3428c16f?width=378"
-                alt="DL2 Tool variant 1"
-                className="h-48 md:h-60 w-auto object-contain max-w-0"
-              />
+              
               <img
                 src="https://cdn.builder.io/api/v1/image/assets%2F2f0b492e34a14ec29346019ef2a7eaa9%2F850adb3e4b3e42cd9b3e52f43a9520fe?format=webp&width=800&height=1200"
-                alt="DL2 Tool variant 2"
+                alt="DL2 Tool"
                 className="h-44 md:h-56 w-auto object-contain"
               />
-              <img
-                src="https://api.builder.io/api/v1/image/assets/TEMP/76a1352e2bf60bff0801ff3604dce47e3428c16f?width=378"
-                alt="DL2 Tool variant 3"
-                className="h-40 md:h-52 w-auto object-contain opacity-0"
-              />
+              
             </div>
           </div>
 

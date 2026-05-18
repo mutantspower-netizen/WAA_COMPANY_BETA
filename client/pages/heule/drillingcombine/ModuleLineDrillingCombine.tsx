@@ -35,11 +35,12 @@ const cuttingRows = [
 ];
 
 const processSteps = [
-  { label: "Rapid feed to position A or\n1.0 mm distance\nSpindle turning with clockwise\nInternal coolant on" },
-  { label: "Working feed to position B" },
-  { label: "Rapid feed to position C or\n0.5 mm distance" },
-  { label: "Working feed to position D" },
-  { label: "Rapid feed out of the workpiece" },
+  { label: "The direction of rotation does not\nneed to be changed and the spindle\ndoes not need to be stopped at any\npoint during the machining process.\nThe drill tool is positioned in front of \nthe workpiece in rapid feed. " },
+  { label: "Drill the bore (according to the man ufacturer's cutting data)\nuntil the  module blade is just above the upper  edge of the bore." },
+  { label: "Carry out chamfering (according to  the HEULE cutting data) until the  blade is fully retracted (chamfer  depth +1mm)" },
+  { label: "In working feed the chamfer is  generated. Continue in working  feed until the blade is completely  retracted into the tool body." },
+  { label: "Carry out chamfering until the blade  is fully retracted (chamfer depth +1  mm)." },
+  { label: "Move out of the workpiece in rapid  feed and move to the next bore." },
 ];
 
 export default function Dl2Deburring() {
@@ -60,6 +61,13 @@ export default function Dl2Deburring() {
             <h1 className="font-sarabun text-[#A32A19] text-3xl md:text-4xl lg:text-5xl font-semibold mb-4">
              MODULELINE DRILLINGCOMBINE
             </h1>
+            <div className="flex-1 flex items-center justify-center mt-12 gap-6 mb-16">
+              <img
+                src="\img\Module_Line.png"
+                alt="COFA Deburring Tools"
+                className="w-full max-w-[380px] object-contain"
+              />
+            </div>
             <p className="font-sarabun text-black text-sm md:text-[15px] leading-relaxed max-w-[680px]">
               The SNAP18 module by HEULE Werkzeug AG is a precision chamfering solution designed for automated front and back chamfering of bores in a single continuous operation. Specifically developed for bore diameters ranging from 18.0 mm to 50.0 mm, the SNAP18 module delivers accurate and consistent edge finishing while reducing machining time and eliminating the need for secondary operations. What makes the SNAP18 system unique is its ability to perform reliable chamfering in automated machining environments with high precision and repeatability. Engineered for demanding CNC applications, the module provides efficient and stable performance, making it ideal for high-volume production processes where productivity, flexibility, and consistent chamfer quality are essential.
             </p>
@@ -112,32 +120,35 @@ export default function Dl2Deburring() {
                   OPERATING PRINCIPLE
                 </h2>
                 <p className="font-sarabun text-black text-sm md:text-[15px] leading-relaxed">
-                  Due to its size, the DL2 blade performs the function of the spring and the blade simultaneously. Due to the
-                  rigid alignment of the blade, the operating principle is different from that of other HEULE tool systems. The
-                  blade has been designed in such a way that it can be used in confined spaces without compromising on
-                  functionality.
+                 SNAP technology at the core The guiding  section of the blade causes  
+                 the blade to retract into the tool body  once the maximum chamfer size 
+                 has  been achieved. As a result, parts with  fluctuating tolerances of
+                  surface/edge  positions (i.e. with castings), are ma chined
+                   with consistent chamfer results  every time. The spherically ground 
+                   slid ing section of the blade enables the tool  to pass through the 
+                   workpiece without  damaging the surface of the bore.
                 </p>
               </div>
 
               {/* Center: Product image */}
               <div className="flex items-center justify-center">
                 <img
-                  src="https://cdn.builder.io/api/v1/image/assets%2F2f0b492e34a14ec29346019ef2a7eaa9%2F8b4dad89ebff434c905ae86f36683acf?format=webp&width=800&height=1200"
-                  alt="DL2 Tool"
-                  className="w-full max-w-[260px] object-contain"
+                  src="\MODULE\MODULE TOOL2.png"
+                  alt="MODULE Tool"
+                  className="w-full max-w-[100px] object-contain"
                 />
               </div>
 
               {/* Right: Controlled Deburring */}
               <div className="flex flex-col justify-center">
                 <h2 className="font-sarabun text-[#A32A19] text-xl md:text-2xl font-semibold mb-3">
-                  CONTROLLED DEBURRING
+                  EASY INSTALLATION
                 </h2>
                 <p className="font-sarabun text-black text-sm md:text-[15px] leading-relaxed">
-                  The blade produces the desired debur in working feed. Upon completion of deburring, the blade automatically
-                  retracts into the blade housing without external activation. The specially designed sliding section of the blade
-                  prevents the bores from being damaged. The spring coated blade automatically returns to its neutral position
-                  when it re-fits the bore.
+                  A pocket for mounting the SNAP18 Mod ule is machined in the drill body as close  
+                  as possible to the drill insert. The crucial  advantage here is that you can 
+                  utilise  your own tried-and-tested drill technolo gy without having to change 
+                  drill supplier
                 </p>
               </div>
             </div>
@@ -151,6 +162,12 @@ export default function Dl2Deburring() {
             alt=""
             className="absolute inset-0 w-full h-full object-cover select-none pointer-events-none opacity-25"
           />
+          <img
+              src="\MODULE\module dia.png"
+              alt="MODULE Tool Design"
+             className="w-full max-w-[460px] object-contain mx-auto "
+            />
+          
           <div className="relative max-w-[900px] mx-auto px-6 text-center">
             <h2 className="font-sarabun text-[#A32A19] text-xl md:text-2xl font-semibold mb-4">
               TOOL DESIGN
@@ -166,7 +183,7 @@ export default function Dl2Deburring() {
           </div>
         </section>
 
-        {/* ── DL2 PROCESS STEPS ────────────────────────────────────────── */}
+        {/* ── MODULE PROCESS STEPS ────────────────────────────────────────── */}
         <section className="relative py-12 md:py-16">
           <img
             src="https://api.builder.io/api/v1/image/assets/TEMP/59460b3436a961710e2a5960760b4a43317ac5d9?width=2896"
@@ -175,18 +192,31 @@ export default function Dl2Deburring() {
           />
           <div className="relative max-w-[1100px] mx-auto px-6">
             <h2 className="font-sarabun text-[#A32A19] text-xl md:text-2xl font-semibold text-center mb-8">
-              DL2 PROCESS STEPS
+              MODULELINE PROCESS STEPS
             </h2>
-            <div className="grid grid-cols-2 sm:grid-cols-3 gap-6 md:gap-8">
-              {processSteps.map((step, i) => (
-                <div key={i} className="flex flex-col items-center gap-3">
-                  <div className="w-full aspect-square max-w-[180px] bg-white/60 border border-[#B8B8B8] rounded flex items-center justify-center">
-                    <span className="text-[#A32A19] font-semibold text-2xl">{i + 1}</span>
-                  </div>
-                  <p className="font-sarabun text-black text-xs md:text-sm leading-snug text-center whitespace-pre-line">
-                    {step.label}
-                  </p>
-                </div>
+            <img
+              src="\MODULE\module process (1).png"
+              alt="MODULE Process Steps Diagram 1"
+              className="w-full object-contain mb-2"
+            />
+            <div className="grid grid-cols-3 gap-2 mb-8">
+              {processSteps.slice(0, 3).map((step, i) => (
+                <p key={i} className="font-sarabun text-black text-xs md:text-sm leading-snug whitespace-pre-line text-center">
+                  {step.label}
+                </p>
+              ))}
+            </div>
+
+            <img
+              src="\MODULE\module process.png"
+              alt="MODULE Process Steps Diagram 2"
+              className="w-full object-contain mb-2"
+            />
+            <div className="grid grid-cols-3 gap-2">
+              {processSteps.slice(3).map((step, i) => (
+                <p key={i} className="font-sarabun text-black text-xs md:text-sm leading-snug text-center">
+                  {step.label}
+                </p>
               ))}
             </div>
           </div>

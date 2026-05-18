@@ -35,11 +35,41 @@ const cuttingRows = [
 ];
 
 const processSteps = [
-  { label: "Rapid feed to position A or\n1.0 mm distance\nSpindle turning with clockwise\nInternal coolant on" },
-  { label: "Working feed to position B" },
-  { label: "Rapid feed to position C or\n0.5 mm distance" },
-  { label: "Working feed to position D" },
-  { label: "Rapid feed out of the workpiece" },
+  { 
+  label: "Rapid feed to 1.0 mm in front of the bore\nSpindle stop\nInternal coolant on (20–50 bar)\nDwell time 2–5 sec" 
+},
+
+{ 
+  label: "Rapid feed to position Xt" 
+},
+
+{ 
+  label: "Switch off internal coolant\nActivation speed on\nDwell time 1–2 sec" 
+},
+
+{ 
+  label: "Rapid feed up to the bore edge\nObserve safety clearance of 1.0 mm\nCutting speed set\nExternal coolant on" 
+},
+
+{ 
+  label: "Working feed until blade is fully in the cut" 
+},
+
+{ 
+  label: "Internal coolant on\nWorking feed to counterbore depth\nFree cutting without internal coolant recommended" 
+},
+
+{ 
+  label: "Internal coolant off\nExternal coolant off\nRapid feed to position X" 
+},
+
+{ 
+  label: "Spindle stop\nInternal coolant on 20–50 bar\nDwell time 2–5 sec" 
+},
+
+{ 
+  label: "Rapid feed out of the workpiece" 
+}
 ];
 
 export default function Dl2Deburring() {
@@ -60,6 +90,13 @@ export default function Dl2Deburring() {
             <h1 className="font-sarabun text-[#A32A19] text-3xl md:text-4xl lg:text-5xl font-semibold mb-4">
              BSF COUNTERBORING
             </h1>
+            <div className="flex-1 flex items-center justify-center mt-12 gap-6 mb-16">
+              <img
+                src="\img\BSF_no_bg.png"
+                alt="COFA Deburring Tools"
+                className="w-full max-w-[380px] object-contain"
+              />
+            </div>
             <p className="font-sarabun text-black text-sm md:text-[15px] leading-relaxed max-w-[680px]">
              The BSF counterboring tool by HEULE Werkzeug AG is designed for efficient and reliable counterboring and spotfacing in automated machining applications, using internal coolant activation for precise and consistent operation. What makes the BSF system versatile is its availability in multiple configurations, including BSF Air for pneumatic activation and BSF Manual for manual applications, allowing the tool to adapt to different production requirements. Supplied as a standard unit without a blade, the blade must be ordered separately to match the specific material and application. The standard “1A” blade coating is optimized for steel alloys, while alternative coatings such as “1D” are available for aluminium machining applications. Featuring a cylindrical shank for secure clamping, the tool also offers optional Weldon (“-HB”) and Whistle Notch (“-HE”) shank configurations upon request, providing additional flexibility for demanding machining environments.
             </p>
@@ -106,16 +143,15 @@ export default function Dl2Deburring() {
         <section className="relative py-12 md:py-16">
           <div className="relative max-w-[1100px] mx-auto px-6">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
-              {/* Left: Operating Principle */}
+              {/* Left: THE AVANTAGES */}
               <div className="flex flex-col justify-center">
                 <h2 className="font-sarabun text-[#A32A19] text-xl md:text-2xl font-semibold mb-3">
-                  OPERATING PRINCIPLE
+                  THE AVANTAGES OF BSF
                 </h2>
                 <p className="font-sarabun text-black text-sm md:text-[15px] leading-relaxed">
-                  Due to its size, the DL2 blade performs the function of the spring and the blade simultaneously. Due to the
-                  rigid alignment of the blade, the operating principle is different from that of other HEULE tool systems. The
-                  blade has been designed in such a way that it can be used in confined spaces without compromising on
-                  functionality.
+                 BSF can be used on a wide variety of machines. Thanks to the modular system, BSF adapts to existing blade activation options.<br/>
+                 The robust tool is ready for immediate use without presets and is extremely easy to handle.<br/>
+                 BSF machines inaccessible bores automatically and without turning the workpiece. Reliable operation thanks to integrated blade window flushing.
                 </p>
               </div>
 
@@ -128,16 +164,15 @@ export default function Dl2Deburring() {
                 />
               </div>
 
-              {/* Right: Controlled Deburring */}
+              {/* Right: APPLICATION LIMITS */}
               <div className="flex flex-col justify-center">
                 <h2 className="font-sarabun text-[#A32A19] text-xl md:text-2xl font-semibold mb-3">
-                  CONTROLLED DEBURRING
+                  APPLICATION LIMITS
                 </h2>
                 <p className="font-sarabun text-black text-sm md:text-[15px] leading-relaxed">
-                  The blade produces the desired debur in working feed. Upon completion of deburring, the blade automatically
-                  retracts into the blade housing without external activation. The specially designed sliding section of the blade
-                  prevents the bores from being damaged. The spring coated blade automatically returns to its neutral position
-                  when it re-fits the bore.
+                  Surfaces or partially interrupt ed cuts up to a maximum pitch  angle of 20° are permissible.<br/>
+                  Excessive curvatures or pitch  angles can cause the blade and  tool to break.<br/> 
+                  Therefore, such  applications are only feasible  to a limited extent.  The HEULE specialists are hap py to advise you.Excessive pitch angles and ful ly interrupted cuts, such as  with punching, slotting, etc.,  cause the blade and tool to  break.
                 </p>
               </div>
             </div>
@@ -151,6 +186,12 @@ export default function Dl2Deburring() {
             alt=""
             className="absolute inset-0 w-full h-full object-cover select-none pointer-events-none opacity-25"
           />
+          <img
+              src="\BSF\BSF TOOL DESIGN.png"
+              alt="BSF Tool Design"
+             className="w-full max-w-[500px] object-contain mx-auto "
+            />
+          
           <div className="relative max-w-[900px] mx-auto px-6 text-center">
             <h2 className="font-sarabun text-[#A32A19] text-xl md:text-2xl font-semibold mb-4">
               TOOL DESIGN
@@ -164,6 +205,49 @@ export default function Dl2Deburring() {
               operation and a long blade life.
             </p>
           </div>
+          
+        </section>
+          <section className="relative py-12 md:py-16">
+             <img
+            src="https://api.builder.io/api/v1/image/assets/TEMP/091c1556916c9587f51a28f59014d90ac185e978?width=2896"
+            alt=""
+            className="absolute inset-0 w-full h-full object-cover select-none pointer-events-none opacity-25"
+          />
+          <div className="relative max-w-[1100px] mx-auto px-6"> 
+             <h2 className="font-sarabun text-[#A32A19] text-xl md:text-2xl font-semibold mb-3 text-center">
+                  OPERATING PRINCIPLE
+                </h2>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
+              {/* Left: Operating Principle */}
+              <div className="flex flex-col justify-center">
+               
+                <p className="font-sarabun text-black text-sm md:text-[15px] leading-relaxed">
+                  1.The internal coolant (IC), the air or  manual actuation applies pressure on the  piston. The blade is folded in by the con trol bolt, which presses on the back sur face (red)<br/>
+
+                  2.During the folding movement, the  back surface rotates away and the con trol bolt – still under pressure – hits the  stop-surface of the blade
+                
+                </p>
+              </div>
+
+              {/* Center: Product image */}
+              <div className="flex items-center justify-center">
+                <img
+                  src="\BSF\Bsf op princ.png"
+                  alt="DL2 Tool"
+                  className="w-full max-w-[460px] object-contain"
+                />
+              </div>
+
+              {/* Right: Operating Principle */}
+              <div className="flex flex-col justify-center">
+                <p className="font-sarabun text-black text-sm md:text-[15px] leading-relaxed">
+                  3.When folded in, the control bolt holds  the blade in position. The blade remains  in position (folded in) regardless of ac celeration in the axial direction (Z-axis)<br/>
+
+                  4.After switching off the coolant pres sure/air pressure or manually turning the  activation ring, the control bolt retracts  and the blade is folded out by centrifugal  force from the spindle rotation.
+                </p>
+              </div>
+            </div>
+          </div>
         </section>
 
         {/* ── bsf PROCESS STEPS ────────────────────────────────────────── */}
@@ -175,7 +259,7 @@ export default function Dl2Deburring() {
           />
           <div className="relative max-w-[1100px] mx-auto px-6">
             <h2 className="font-sarabun text-[#A32A19] text-xl md:text-2xl font-semibold text-center mb-8">
-              DL2 PROCESS STEPS
+              BSF PROCESS STEPS
             </h2>
             <img
               src="\BSF\bsf sstep pro 1.png"
@@ -193,6 +277,18 @@ export default function Dl2Deburring() {
             <img
               src="\BSF\bsf sstep pro 2.png"
               alt="bsf Process Steps Diagram 2"
+              className="w-full object-contain mb-2"
+            />
+            <div className="grid grid-cols-3 gap-2">
+              {processSteps.slice(3).map((step, i) => (
+                <p key={i} className="font-sarabun text-black text-xs md:text-sm leading-snug text-center">
+                  {step.label}
+                </p>
+              ))}
+            </div>
+            <img
+              src="\BSF\bsf sstep pro 3.png"
+              alt="bsf Process Steps Diagram 3"
               className="w-full object-contain mb-2"
             />
             <div className="grid grid-cols-3 gap-2">

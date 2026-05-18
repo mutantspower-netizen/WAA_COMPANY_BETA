@@ -60,6 +60,13 @@ export default function Dl2Deburring() {
             <h1 className="font-sarabun text-[#A32A19] text-3xl md:text-4xl lg:text-5xl font-semibold mb-4">
              SNAP CHAMFERING
             </h1>
+            <div className="flex-1 flex items-center justify-center mt-12 gap-6 mb-16">
+              <img
+                src="\img\snap_no_bg.png"
+                alt="COFA Deburring Tools"
+                className="w-full max-w-[500px] object-contain"
+              />
+            </div>
             <p className="font-sarabun text-black text-sm md:text-[15px] leading-relaxed max-w-[680px]">
               The SNAP deburring tool by HEULE Werkzeug AG is designed for precise front and back chamfering of drilled holes in a single continuous operation. 
               What makes SNAP unique is its interchangeable blade system, which allows different chamfer sizes to be achieved for various bore diameters while maintaining consistent and accurate edge quality. 

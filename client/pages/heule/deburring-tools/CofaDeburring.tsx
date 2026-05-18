@@ -70,28 +70,24 @@ export default function CofaDeburring() {
         {/* ── Hero Section ─────────────────────────────────────────────── */}
         <section className="relative w-full overflow-hidden min-h-[420px] md:min-h-[500px] flex items-center justify-center">
           {/* Background */}
+          
           <img
             src="https://api.builder.io/api/v1/image/assets/TEMP/b5b3e425511297b48447947438408554026b5791?width=2896"
             alt=""
             className="absolute inset-0 w-full h-full object-cover select-none pointer-events-none"
-          />
-          {/* Left tool */}
-          <img
-            src="https://api.builder.io/api/v1/image/assets/TEMP/1b038a3787022760f8e21dc8b24ce641443538a2?width=1984"
-            alt=""
-            className="absolute left-0 bottom-0 w-[35%] max-w-[300px] object-contain select-none pointer-events-none translate-y-4 -translate-x-8 opacity-75"
-          />
-          {/* Right tool */}
-          <img
-            src="https://api.builder.io/api/v1/image/assets/TEMP/d66026a4e4dbe61612ec014b2e2699b9396b6f0f?width=1984"
-            alt=""
-            className="absolute right-0 top-0 w-[35%] max-w-[300px] object-contain select-none pointer-events-none -translate-y-4 translate-x-8 opacity-75"
           />
           {/* Centered text */}
           <div className="relative z-10 flex flex-col items-center text-center px-6 py-16 max-w-[860px] mx-auto">
             <h1 className="font-sarabun text-[#A32A19] text-3xl md:text-4xl lg:text-5xl font-semibold mb-4">
               COFA DEBURRING
             </h1>
+            <div className="flex-1 flex items-center justify-center mt-12 gap-6 mb-16">
+              <img
+                src="\img\1248-COFA_Sortiment_shade_7680x4320.png"
+                alt="COFA Deburring Tools"
+                className="w-full max-w-[380px] object-contain"
+              />
+            </div>
             <p className="font-sarabun text-black text-sm md:text-[15px] leading-relaxed max-w-[680px]">
               The COFA deburring tool by HEULE Werkzeug AG is designed for efficient front and back deburring of drilled
               holes—including uneven, sloped, or cross-hole geometries—in a single continuous operation. What makes COFA unique

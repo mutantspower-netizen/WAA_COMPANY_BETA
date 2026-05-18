@@ -60,6 +60,13 @@ export default function Dl2Deburring() {
             <h1 className="font-sarabun text-[#A32A19] text-3xl md:text-4xl lg:text-5xl font-semibold mb-4">
              VEX DRILLINGCOMBINE
             </h1>
+            <div className="flex-1 flex items-center justify-center mt-12 gap-6 mb-16">
+              <img
+                src="\img\VEX.png"
+                alt="COFA Deburring Tools"
+                className="w-full max-w-[380px] object-contain"
+              />
+            </div>
             <p className="font-sarabun text-black text-sm md:text-[15px] leading-relaxed max-w-[680px]">
               The Vex drilling combine by HEULE Werkzeug AG is designed for efficient and reliable front and back drilling in automated machining applications, using internal coolant activation for precise and consistent operation. What makes the BSF system versatile is its availability in multiple configurations, including BSF Air for pneumatic activation and BSF Manual for manual applications, allowing the tool to adapt to different production requirements. Supplied as a standard unit without a blade, the blade must be ordered separately to match the specific material and application. The standard “1A” blade coating is optimized for steel alloys, while alternative coatings such as “1D” are available for aluminium machining applications. Featuring a cylindrical shank for secure clamping, the tool also offers optional Weldon (“-HB”) and Whistle Notch (“-HE”) shank configurations upon request, providing additional flexibility for demanding machining environments.
             </p>
@@ -122,8 +129,8 @@ export default function Dl2Deburring() {
               {/* Center: Product image */}
               <div className="flex items-center justify-center">
                 <img
-                  src="https://cdn.builder.io/api/v1/image/assets%2F2f0b492e34a14ec29346019ef2a7eaa9%2F8b4dad89ebff434c905ae86f36683acf?format=webp&width=800&height=1200"
-                  alt="DL2 Tool"
+                  src="\VEX\ves dia.png"
+                  alt="VEX Tool"
                   className="w-full max-w-[260px] object-contain"
                 />
               </div>
@@ -151,6 +158,11 @@ export default function Dl2Deburring() {
             alt=""
             className="absolute inset-0 w-full h-full object-cover select-none pointer-events-none opacity-25"
           />
+           <img
+              src="\VEX\vex tool design.png"
+              alt="VEX Tool Design"
+             className="w-full max-w-[460px] object-contain mx-auto "
+            />
           <div className="relative max-w-[900px] mx-auto px-6 text-center">
             <h2 className="font-sarabun text-[#A32A19] text-xl md:text-2xl font-semibold mb-4">
               TOOL DESIGN
@@ -175,18 +187,31 @@ export default function Dl2Deburring() {
           />
           <div className="relative max-w-[1100px] mx-auto px-6">
             <h2 className="font-sarabun text-[#A32A19] text-xl md:text-2xl font-semibold text-center mb-8">
-              DL2 PROCESS STEPS
+              VEX PROCESS STEPS
             </h2>
-            <div className="grid grid-cols-2 sm:grid-cols-3 gap-6 md:gap-8">
-              {processSteps.map((step, i) => (
-                <div key={i} className="flex flex-col items-center gap-3">
-                  <div className="w-full aspect-square max-w-[180px] bg-white/60 border border-[#B8B8B8] rounded flex items-center justify-center">
-                    <span className="text-[#A32A19] font-semibold text-2xl">{i + 1}</span>
-                  </div>
-                  <p className="font-sarabun text-black text-xs md:text-sm leading-snug text-center whitespace-pre-line">
-                    {step.label}
-                  </p>
-                </div>
+           <img
+              src="\VEX\VEX process.png"
+              alt="VEX Process Steps Diagram 1"
+              className="w-full object-contain mb-2"
+            />
+            <div className="grid grid-cols-3 gap-2 mb-8">
+              {processSteps.slice(0, 3).map((step, i) => (
+                <p key={i} className="font-sarabun text-black text-xs md:text-sm leading-snug whitespace-pre-line text-center">
+                  {step.label}
+                </p>
+              ))}
+            </div>
+
+            <img
+              src="\VEX\vex process 2.png"
+              alt="VEX Process Steps Diagram 2"
+              className="w-full object-contain mb-2"
+            />
+            <div className="grid grid-cols-3 gap-2">
+              {processSteps.slice(3).map((step, i) => (
+                <p key={i} className="font-sarabun text-black text-xs md:text-sm leading-snug text-center">
+                  {step.label}
+                </p>
               ))}
             </div>
           </div>
@@ -207,9 +232,9 @@ export default function Dl2Deburring() {
               {/* Tool image */}
               <div className="flex-shrink-0 flex items-center justify-center w-full md:w-auto">
                 <img
-                  src="https://cdn.builder.io/api/v1/image/assets%2F2f0b492e34a14ec29346019ef2a7eaa9%2Febeb565a9831444db25117ed98f1ba4a?format=webp&width=800&height=1200"
-                  alt="DL2 Dimension Diagram"
-                  className="w-full max-w-[220px] object-contain"
+                  src="\VEX\VEX PROG EX.png"
+                  alt="VEX Dimension Diagram"
+                  className="w-full max-w-[200px] object-contain"
                 />
               </div>
               {/* Data columns */}

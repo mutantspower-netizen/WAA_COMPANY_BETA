@@ -60,6 +60,13 @@ export default function Dl2Deburring() {
             <h1 className="font-sarabun text-[#A32A19] text-3xl md:text-4xl lg:text-5xl font-semibold mb-4">
              GHK CHAMFERING
             </h1>
+            <div className="flex-1 flex items-center justify-center mt-12 gap-6 mb-16">
+              <img
+                src="\img\gh-k_no_bg.png"
+                alt="COFA Deburring Tools"
+                className="w-full max-w-[380px] object-contain"
+              />
+            </div>
             <p className="font-sarabun text-black text-sm md:text-[15px] leading-relaxed max-w-[680px]">
               The GH-K chamfering tool by HEULE Werkzeug AG is designed to provide a wide range of applications, 
               offering large countersink capabilities for bore diameters from Ø3.0 mm up to 45.0 mm. 
