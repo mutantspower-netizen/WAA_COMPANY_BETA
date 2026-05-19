@@ -62,11 +62,11 @@ export default function Nrita() {
         {/* Hero section */}
         <section className="relative w-full overflow-hidden bg-[#111]">
           <img
-            src="https://api.builder.io/api/v1/image/assets/TEMP/954b83ba7fb774c332ed5340b731c243c0fb8f71?width=4000"
-            alt="Narita End Mills"
-            className="w-full object-cover object-center"
-            style={{ maxHeight: '270px' }}
-          />
+              src="/img/1.png"
+              alt="Narita End Mills"
+              className="w-full h-auto object-cover"
+              style={{ maxHeight: '500px' }}
+            />
         </section>
 
         {/* Brand section */}

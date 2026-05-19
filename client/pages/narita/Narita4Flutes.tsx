@@ -188,7 +188,7 @@ export default function Narita4Flutes() {
               <img
                 src="https://api.builder.io/api/v1/image/assets/TEMP/0823aeb34f173a738e8884f3e139142cb7a02929?width=400"
                 alt="4 Flutes End Mill"
-                className="h-52 md:h-64 w-auto object-contain max-w-[200px]"
+                className="h-52 md:h-64 w-auto object-contain max-w-[200px] scale-x-[-1]"
               />
             </div>
           </div>
